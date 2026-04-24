@@ -25,10 +25,20 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare Pages artifact
+        run: |
+          rm -rf site
+          mkdir -p site/assets
+          cp looker-dashboard/index.html site/index.html
+          cp looker-dashboard/styles.css site/styles.css
+          cp looker-dashboard/script.js site/script.js
+          cp looker-dashboard/404.html site/404.html
+          cp -R looker-dashboard/assets/. site/assets/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ./site
 
   deploy:
     environment:
