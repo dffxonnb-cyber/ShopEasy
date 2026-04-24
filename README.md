@@ -3,7 +3,6 @@
 ## Website
 
 - Public site: [https://dffxonnb-cyber.github.io/ShopEasy/](https://dffxonnb-cyber.github.io/ShopEasy/)
-- 참고: 저장소를 `Public`으로 전환하거나, 비공개 Pages를 지원하는 요금제를 사용해야 외부에서 열립니다.
 
 ## GitHub Pages 설정
 
