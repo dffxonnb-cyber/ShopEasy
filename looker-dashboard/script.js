@@ -8,7 +8,7 @@
       label: "완료 매출",
       value: 89439000,
       format: "currency",
-      pill: "3개월 누적",
+      pill: "누적 실적",
       note: "완료 주문 기준 누적 매출",
       trend: "7월 대비 9월 매출 -47.9%",
       series: [60978000, 47411000, 31776000],
@@ -19,7 +19,7 @@
       value: 688,
       format: "number",
       suffix: "건",
-      pill: "주문 KPI",
+      pill: "주문 현황",
       note: "전체 주문 1,000건 중 완료 688건",
       trend: "전체 완료율 68.8%",
       series: [305, 224, 159],
@@ -265,6 +265,8 @@
       body: "세션 규모는 작지만 성과가 좋아 태블릿 기준 상품상세 레이아웃을 기준안으로 삼아볼 만합니다.",
     },
   ],
+  monthlyInsight:
+    "7월 대비 9월 주문 수가 감소했고, 완료 주문 수도 함께 줄어 전체 수요보다 구매 완료 흐름의 약화 가능성을 함께 점검할 필요가 있습니다.",
 };
 
 const numberFormatter = new Intl.NumberFormat("ko-KR");
@@ -303,6 +305,11 @@ function formatDuration(secondsValue) {
   }
 
   return `${minutes}분 ${String(seconds).padStart(2, "0")}초`;
+}
+
+function formatMonthShort(value) {
+  const monthPart = String(value).split(".")[1] ?? value;
+  return `${Number(monthPart)}월`;
 }
 
 function formatDelta(current, previous) {
@@ -383,34 +390,48 @@ function renderMonthlyChart() {
   }
 
   const data = dashboardData.monthlyOrders;
-  const width = Math.max(container.clientWidth, 320);
-  const height = width < 520 ? 280 : 320;
-  const margin = { top: 18, right: 56, bottom: 42, left: 52 };
+  const width = Math.max(container.clientWidth, 360);
+  const height = width < 520 ? 320 : 360;
+  const margin = { top: 34, right: 24, bottom: 52, left: 56 };
   const chartWidth = width - margin.left - margin.right;
   const chartHeight = height - margin.top - margin.bottom;
   const maxOrders = Math.max(...data.flatMap((item) => [item.totalOrders, item.completedOrders]));
   const orderCeil = Math.ceil(maxOrders / 50) * 50;
-  const band = chartWidth / data.length;
-  const barWidth = Math.min(24, band * 0.18);
-  const barOffset = 6;
   const leftAxisTicks = Array.from({ length: 5 }, (_, index) => (orderCeil / 4) * index);
-  const rightAxisTicks = [0, 50, 100];
-
   const yOrder = (value) => margin.top + chartHeight - (value / orderCeil) * chartHeight;
-  const yRate = (value) => margin.top + chartHeight - (value / 100) * chartHeight;
+  const xPosition = (index) => {
+    if (data.length === 1) {
+      return margin.left + chartWidth / 2;
+    }
 
-  const linePoints = data
+    return margin.left + (index * chartWidth) / (data.length - 1);
+  };
+
+  const totalLinePoints = data
     .map((item, index) => {
-      const x = margin.left + band * index + band / 2;
-      return `${x},${yRate(item.completionRate)}`;
+      const x = xPosition(index);
+      return `${x},${yOrder(item.totalOrders)}`;
     })
     .join(" ");
+
+  const completedLinePoints = data
+    .map((item, index) => {
+      const x = xPosition(index);
+      return `${x},${yOrder(item.completedOrders)}`;
+    })
+    .join(" ");
+
+  const completedAreaPoints = `
+    ${margin.left},${margin.top + chartHeight}
+    ${completedLinePoints}
+    ${xPosition(data.length - 1)},${margin.top + chartHeight}
+  `;
 
   const gridLines = leftAxisTicks
     .map((tick) => {
       const y = yOrder(tick);
       return `
-        <line x1="${margin.left}" y1="${y}" x2="${width - margin.right}" y2="${y}" stroke="#e5ebf7" stroke-width="1"></line>
+        <line x1="${margin.left}" y1="${y}" x2="${width - margin.right}" y2="${y}" stroke="#dfe7f5" stroke-width="1.2"></line>
         <text x="${margin.left - 12}" y="${y + 4}" text-anchor="end" font-size="12" fill="#7b88a5">${formatNumber(
           tick,
         )}</text>
@@ -418,41 +439,34 @@ function renderMonthlyChart() {
     })
     .join("");
 
-  const rightAxis = rightAxisTicks
-    .map((tick) => {
-      const y = yRate(tick);
+  const monthLabels = data
+    .map((item, index) => {
+      const x = xPosition(index);
       return `
-        <text x="${width - margin.right + 10}" y="${y + 4}" text-anchor="start" font-size="12" fill="#1da89b">${tick}%</text>
+        <line x1="${x}" y1="${margin.top}" x2="${x}" y2="${margin.top + chartHeight}" stroke="#f1f5fb" stroke-width="1"></line>
+        <text x="${x}" y="${height - 14}" text-anchor="middle" font-size="12" fill="#66748f">${formatMonthShort(
+          item.month,
+        )}</text>
       `;
     })
     .join("");
 
-  const bars = data
+  const pointMarkers = data
     .map((item, index) => {
-      const center = margin.left + band * index + band / 2;
-      const totalX = center - barWidth - barOffset / 2;
-      const completedX = center + barOffset / 2;
+      const x = xPosition(index);
       const totalY = yOrder(item.totalOrders);
       const completedY = yOrder(item.completedOrders);
-
       return `
-        <rect x="${totalX}" y="${totalY}" width="${barWidth}" height="${margin.top + chartHeight - totalY}" rx="8" fill="#7b88a5" opacity="0.32"></rect>
-        <rect x="${completedX}" y="${completedY}" width="${barWidth}" height="${margin.top + chartHeight - completedY}" rx="8" fill="#356dff"></rect>
-        <text x="${center}" y="${height - 12}" text-anchor="middle" font-size="12" fill="#66748f">${item.month}</text>
-      `;
-    })
-    .join("");
-
-  const dots = data
-    .map((item, index) => {
-      const center = margin.left + band * index + band / 2;
-      const y = yRate(item.completionRate);
-      return `
-        <circle cx="${center}" cy="${y}" r="5" fill="#1da89b"></circle>
-        <circle cx="${center}" cy="${y}" r="10" fill="#1da89b" opacity="0.12"></circle>
-        <text x="${center}" y="${y - 16}" text-anchor="middle" font-size="12" fill="#1da89b" font-weight="700">${item.completionRate.toFixed(
-          2,
-        )}%</text>
+        <circle cx="${x}" cy="${totalY}" r="5.5" fill="#7b88a5"></circle>
+        <circle cx="${x}" cy="${totalY}" r="11" fill="#7b88a5" opacity="0.12"></circle>
+        <circle cx="${x}" cy="${completedY}" r="5.5" fill="#356dff"></circle>
+        <circle cx="${x}" cy="${completedY}" r="11" fill="#356dff" opacity="0.14"></circle>
+        <text x="${x}" y="${totalY - 16}" text-anchor="middle" font-size="12" fill="#5b6782" font-weight="700">${formatNumber(
+          item.totalOrders,
+        )}</text>
+        <text x="${x}" y="${completedY + 24}" text-anchor="middle" font-size="12" fill="#356dff" font-weight="700">${formatNumber(
+          item.completedOrders,
+        )}</text>
       `;
     })
     .join("");
@@ -460,19 +474,19 @@ function renderMonthlyChart() {
   container.innerHTML = `
     <svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}" role="presentation" aria-hidden="true">
       <defs>
-        <linearGradient id="line-fill" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#1da89b" stop-opacity="0.82"></stop>
-          <stop offset="100%" stop-color="#4bd0be" stop-opacity="0.92"></stop>
+        <linearGradient id="completed-area-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#356dff" stop-opacity="0.16"></stop>
+          <stop offset="100%" stop-color="#356dff" stop-opacity="0.01"></stop>
         </linearGradient>
       </defs>
       ${gridLines}
+      ${monthLabels}
       <line x1="${margin.left}" y1="${margin.top + chartHeight}" x2="${width - margin.right}" y2="${margin.top + chartHeight}" stroke="#dbe3f2" stroke-width="1.5"></line>
-      ${bars}
-      <polyline fill="none" stroke="url(#line-fill)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" points="${linePoints}"></polyline>
-      ${dots}
-      ${rightAxis}
-      <text x="${margin.left}" y="12" font-size="12" fill="#7b88a5">주문 수</text>
-      <text x="${width - margin.right + 10}" y="12" font-size="12" fill="#1da89b">완료율</text>
+      <polygon points="${completedAreaPoints}" fill="url(#completed-area-fill)"></polygon>
+      <polyline fill="none" stroke="#7b88a5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="${totalLinePoints}"></polyline>
+      <polyline fill="none" stroke="#356dff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" points="${completedLinePoints}"></polyline>
+      ${pointMarkers}
+      <text x="${margin.left}" y="14" font-size="12" fill="#7b88a5">주문 수 (건)</text>
     </svg>
   `;
 }
@@ -485,17 +499,29 @@ function renderMonthlyMetrics() {
 
   container.innerHTML = dashboardData.monthlyOrders
     .map((item, index, array) => {
-      const previous = array[index - 1]?.completedOrders;
+      const previous = array[index - 1]?.totalOrders;
       return `
         <article class="mini-metric">
-          <span class="mini-metric-label">${item.month}</span>
-          <strong>${formatCurrencyWan(item.totalAmount)}</strong>
-          <small>완료 주문 ${formatNumber(item.completedOrders)}건 · 완료율 ${formatPercent(item.completionRate)}</small>
-          <small>${formatDelta(item.completedOrders, previous)}</small>
+          <span class="mini-metric-label">${formatMonthShort(item.month)} 구매 완료율</span>
+          <strong>${formatPercent(item.completionRate)}</strong>
+          <small>전체 주문 ${formatNumber(item.totalOrders)}건 · 완료 주문 ${formatNumber(item.completedOrders)}건</small>
+          <small>주문 수 ${formatDelta(item.totalOrders, previous)}</small>
         </article>
       `;
     })
     .join("");
+}
+
+function renderMonthlyInsight() {
+  const container = document.querySelector("#monthly-insight");
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = `
+    <p class="monthly-insight-label">BUSINESS INSIGHT</p>
+    <p>${dashboardData.monthlyInsight}</p>
+  `;
 }
 
 function renderInsights() {
@@ -727,6 +753,7 @@ function initializeDashboard() {
   renderKpis();
   renderMonthlyChart();
   renderMonthlyMetrics();
+  renderMonthlyInsight();
   renderInsights();
   renderCategoryChart();
   renderEntryChart();

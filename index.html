@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="./looker-dashboard/" />
-    <title>ShopEasy Looker 스타일 대시보드</title>
+    <title>ShopEasy 서비스 지표 분석</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -15,23 +15,23 @@
             <img src="./assets/brand-logo.png" alt="ShopEasy 브랜드 로고" />
           </div>
           <div class="brand-copy">
-            <p class="eyebrow">Static Visualization / Looker-style View</p>
-            <h1>ShopEasy 전환·이탈 통합 대시보드</h1>
+            <p class="eyebrow">SERVICE ANALYTICS</p>
+            <h1>ShopEasy 서비스 지표 분석</h1>
             <p class="subtitle">
-              Looker 없이도 보고서처럼 보이도록 구성한 정적 대시보드 버전입니다.
+              3개월 주문 감소 흐름과 전환 저하 요인을 요약한 분석 대시보드
             </p>
           </div>
         </div>
         <div class="topbar-side">
           <div class="chip-stack">
             <span class="chip chip-strong">기간 2025.07 - 2025.09</span>
-            <span class="chip">UTF-8 한국어 안전 렌더링</span>
-            <span class="chip">CSV 더미 데이터 기반</span>
+            <span class="chip">서비스 지표 대시보드</span>
+            <span class="chip">구매 완료 흐름 진단</span>
           </div>
           <div class="status-card">
-            <span class="status-label">Dashboard Status</span>
-            <strong>Looker 스타일 정적 시각화</strong>
-            <span class="status-meta">로컬 파일로 바로 실행 가능</span>
+            <span class="status-label">DASHBOARD OVERVIEW</span>
+            <strong>서비스 지표 분석 대시보드</strong>
+            <span class="status-meta">주문·전환·이탈 흐름을 한 화면에서 점검할 수 있도록 구성한 웹 기반 분석 화면</span>
           </div>
         </div>
       </header>
@@ -39,41 +39,44 @@
       <section class="filter-strip" aria-label="대시보드 필터 상태">
         <div class="filter-card">
           <span class="filter-label">데이터 소스</span>
-          <strong>주문 / 세션 / 사용자 CSV</strong>
+          <strong>주문 / 세션 / 사용자 데이터</strong>
         </div>
         <div class="filter-card">
           <span class="filter-label">기준</span>
-          <strong>완료 주문 중심 KPI</strong>
+          <strong>완료 주문 중심 핵심 지표</strong>
         </div>
         <div class="filter-card">
           <span class="filter-label">분석 초점</span>
-          <strong>전환율 · 이탈률 · 페이지 퍼널</strong>
+          <strong>주문 감소 · 전환 저하 · 이탈 위험</strong>
         </div>
         <div class="filter-card">
           <span class="filter-label">뷰 타입</span>
-          <strong>Looker 유사 레이아웃</strong>
+          <strong>웹 분석 대시보드</strong>
         </div>
       </section>
 
       <section class="kpi-grid" id="kpi-grid" aria-label="핵심 지표"></section>
 
       <main class="dashboard-grid">
-        <section class="panel span-8">
+        <section class="panel span-8 monthly-panel">
           <div class="panel-header">
             <div>
-              <p class="panel-label">Orders Overview</p>
-              <h2>월별 주문 및 완료율</h2>
+              <p class="panel-label">Monthly Performance</p>
+              <h2>월별 주문 수 및 완료 주문 추이</h2>
+              <p class="panel-subtitle">
+                7월 이후 전체 주문과 완료 주문이 함께 감소하며, 구매 전환 흐름 약화 가능성이 확인됩니다.
+              </p>
             </div>
             <div class="legend-inline">
               <span><i class="swatch swatch-slate"></i>전체 주문</span>
               <span><i class="swatch swatch-blue"></i>완료 주문</span>
-              <span><i class="swatch swatch-teal"></i>완료율</span>
             </div>
           </div>
           <div class="chart-frame">
-            <div id="monthly-chart" class="svg-chart" role="img" aria-label="월별 주문과 완료율 차트"></div>
+            <div id="monthly-chart" class="svg-chart" role="img" aria-label="월별 주문 수 및 완료 주문 추이 차트"></div>
           </div>
           <div class="mini-metrics" id="monthly-metrics"></div>
+          <div class="monthly-insight" id="monthly-insight"></div>
         </section>
 
         <aside class="panel span-4">
@@ -163,9 +166,9 @@
       </main>
 
       <footer class="page-footer">
-        <span>인코딩: UTF-8</span>
-        <span>폰트 스택: SUIT / Noto Sans KR / Malgun Gothic</span>
-        <span>실행 방식: 저장소 루트의 `index.html` 또는 GitHub Pages</span>
+        <span>분석 범위: 2025.07 - 2025.09</span>
+        <span>핵심 관점: 주문 감소 · 전환 흐름 · 이탈 위험</span>
+        <span>ShopEasy 서비스 지표 분석 화면</span>
       </footer>
     </div>
 
