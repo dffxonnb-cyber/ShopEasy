@@ -2,6 +2,11 @@
 
 Looker 없이도 바로 공유할 수 있도록 만든 정적 대시보드 저장소입니다.
 
+## Website
+
+- Public site: [https://dffxonnb-cyber.github.io/ShopEasy/](https://dffxonnb-cyber.github.io/ShopEasy/)
+- 참고: 저장소를 `Public`으로 전환하고 GitHub Pages를 활성화해야 외부에서 열립니다.
+
 ## 포함 내용
 
 - `index.html`: 저장소 루트에서 바로 열리는 웹사이트 진입점
