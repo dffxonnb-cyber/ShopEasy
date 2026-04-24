@@ -1,0 +1,4 @@
+﻿device,total_sessions,avg_session_duration,completed_purchases,conversion_rate,conversion_rate_pct
+mobile,1349,153.88,86,0.06375092661230541,6.38
+desktop,508,200.75,64,0.12598425196850394,12.6
+tablet,143,214.15,24,0.16783216783216784,16.78

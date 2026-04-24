@@ -1,0 +1,501 @@
+﻿user_id,age_group,gender,join_date,last_login,purchase_count,region,acquisition_channel,membership_tier,marketing_opt_in,preferred_device,lifecycle_segment
+U0001,30대,M,2024-10-08,2025-08-08,0,서울,paid_search,SILVER,Y,mobile,이탈위험
+U0002,30대,F,2025-07-12,2025-09-07,1,인천,social,GOLD,N,mobile,휴면징후
+U0003,20대,M,2025-01-02,2025-09-27,7,대구,direct,SILVER,Y,desktop,활성고객
+U0004,50대 이상,F,2024-03-12,2025-07-27,0,경기,organic_search,NEW,Y,mobile,이탈위험
+U0005,20대,M,2024-03-14,2025-09-22,2,서울,social,NEW,Y,desktop,활성고객
+U0006,40대,M,2024-02-02,2025-09-29,11,경기,direct,GOLD,Y,mobile,활성고객
+U0007,20대,M,2025-07-28,2025-09-02,0,강원,social,BASIC,Y,mobile,관심고객
+U0008,20대,M,2025-03-08,2025-07-22,1,경기,social,BASIC,Y,mobile,휴면징후
+U0009,40대,F,2024-12-14,2025-07-04,4,경기,organic_search,VIP,N,mobile,휴면징후
+U0010,20대,F,2025-09-15,2025-07-29,17,경기,organic_search,GOLD,N,mobile,충성고객
+U0011,40대,M,2024-09-03,2025-09-16,4,경남,direct,BASIC,Y,mobile,활성고객
+U0012,20대,F,2025-03-09,2025-09-29,1,경남,crm_push,SILVER,N,desktop,활성고객
+U0013,20대,M,2024-01-22,2025-07-03,0,경기,social,NEW,N,mobile,이탈위험
+U0014,30대,F,2025-08-07,2025-08-15,4,경기,social,BASIC,Y,mobile,휴면징후
+U0015,40대,F,2024-03-03,2025-07-28,1,경기,paid_search,BASIC,Y,desktop,휴면징후
+U0016,30대,F,2025-07-17,2025-09-07,0,광주,organic_search,NEW,Y,mobile,관심고객
+U0017,50대 이상,M,2024-01-03,2025-09-05,8,경기,crm_push,SILVER,Y,desktop,휴면징후
+U0018,50대 이상,F,2025-07-09,2025-07-03,0,경기,organic_search,BASIC,N,mobile,이탈위험
+U0019,20대,F,2025-02-17,2025-07-11,0,경북,organic_search,BASIC,Y,mobile,이탈위험
+U0020,40대,M,2025-02-09,2025-07-04,0,광주,organic_search,GOLD,N,mobile,이탈위험
+U0021,20대,F,2024-03-11,2025-09-01,4,경기,direct,GOLD,N,mobile,휴면징후
+U0022,20대,F,2024-05-17,2025-08-28,0,경북,paid_search,NEW,Y,desktop,이탈위험
+U0023,20대,F,2024-02-22,2025-08-23,0,경기,organic_search,NEW,N,mobile,이탈위험
+U0024,20대,F,2024-06-01,2025-08-12,0,전북,social,NEW,Y,mobile,이탈위험
+U0025,40대,M,2025-07-27,2025-08-29,2,경기,crm_push,NEW,N,mobile,휴면징후
+U0026,50대 이상,F,2025-02-25,2025-09-27,0,전남,direct,BASIC,N,desktop,관심고객
+U0027,30대,F,2024-08-21,2025-09-22,5,대전,organic_search,BASIC,Y,mobile,활성고객
+U0028,50대 이상,M,2024-09-24,2025-09-13,0,경남,organic_search,NEW,Y,mobile,관심고객
+U0029,20대,M,2025-03-22,2025-09-22,1,경남,organic_search,SILVER,N,mobile,활성고객
+U0030,20대,F,2024-11-03,2025-07-22,0,대전,social,SILVER,Y,mobile,이탈위험
+U0031,30대,M,2024-01-01,2025-07-29,2,경기,paid_search,BASIC,Y,desktop,휴면징후
+U0032,40대,F,2024-10-17,2025-08-05,3,광주,social,SILVER,N,mobile,휴면징후
+U0033,30대,F,2024-03-15,2025-07-25,2,경북,social,SILVER,Y,mobile,휴면징후
+U0034,50대 이상,F,2024-08-12,2025-08-17,0,경남,organic_search,NEW,Y,mobile,이탈위험
+U0035,50대 이상,F,2025-09-19,2025-09-08,0,경북,direct,GOLD,Y,mobile,관심고객
+U0036,20대,F,2025-05-11,2025-08-08,0,경기,social,BASIC,Y,mobile,이탈위험
+U0037,40대,M,2025-02-21,2025-09-29,13,인천,paid_search,GOLD,Y,mobile,활성고객
+U0038,30대,F,2024-11-01,2025-09-08,3,전남,direct,BASIC,N,tablet,휴면징후
+U0039,20대,M,2025-02-18,2025-07-05,21,전북,direct,VIP,Y,desktop,충성고객
+U0040,20대,M,2024-12-01,2025-08-01,0,경기,organic_search,BASIC,N,desktop,이탈위험
+U0041,50대 이상,M,2024-03-11,2025-08-22,0,광주,direct,GOLD,Y,desktop,이탈위험
+U0042,20대,F,2025-01-12,2025-08-10,0,대구,organic_search,NEW,N,desktop,이탈위험
+U0043,50대 이상,M,2024-07-22,2025-07-26,0,대전,organic_search,NEW,N,mobile,이탈위험
+U0044,30대,F,2024-03-11,2025-08-23,12,경기,social,SILVER,Y,desktop,휴면징후
+U0045,30대,F,2025-09-22,2025-08-09,1,부산,direct,BASIC,N,mobile,휴면징후
+U0046,30대,F,2025-01-23,2025-09-29,1,인천,paid_search,BASIC,Y,mobile,활성고객
+U0047,30대,M,2024-09-04,2025-09-08,2,인천,direct,SILVER,N,desktop,휴면징후
+U0048,20대,F,2025-04-29,2025-09-24,1,경기,social,BASIC,Y,tablet,활성고객
+U0049,40대,F,2024-07-08,2025-08-10,2,강원,organic_search,BASIC,N,mobile,휴면징후
+U0050,20대,F,2024-10-07,2025-08-10,0,서울,organic_search,GOLD,N,mobile,이탈위험
+U0051,30대,F,2024-09-15,2025-07-26,0,인천,crm_push,BASIC,Y,desktop,이탈위험
+U0052,20대,F,2025-03-02,2025-07-10,0,충북,social,BASIC,Y,mobile,이탈위험
+U0053,50대 이상,M,2024-07-31,2025-07-20,0,경기,social,BASIC,Y,mobile,이탈위험
+U0054,20대,M,2025-04-09,2025-07-18,0,경기,organic_search,SILVER,Y,mobile,이탈위험
+U0055,20대,M,2024-03-02,2025-08-31,0,경기,organic_search,BASIC,Y,desktop,이탈위험
+U0056,30대,M,2024-02-10,2025-09-01,1,세종,crm_push,NEW,Y,mobile,휴면징후
+U0057,20대,M,2024-06-28,2025-07-16,0,광주,social,NEW,Y,desktop,이탈위험
+U0058,40대,F,2024-12-03,2025-07-11,0,인천,social,BASIC,N,mobile,이탈위험
+U0059,30대,F,2025-07-09,2025-07-18,0,서울,social,SILVER,Y,mobile,이탈위험
+U0060,50대 이상,F,2024-01-30,2025-08-31,0,대구,crm_push,NEW,Y,mobile,이탈위험
+U0061,20대,F,2024-10-25,2025-08-17,7,경기,social,VIP,Y,desktop,휴면징후
+U0062,20대,F,2025-02-28,2025-08-28,0,충북,paid_search,NEW,N,mobile,이탈위험
+U0063,30대,M,2025-07-10,2025-09-11,8,경남,paid_search,VIP,Y,desktop,활성고객
+U0064,50대 이상,M,2024-06-04,2025-09-15,3,서울,social,BASIC,N,mobile,활성고객
+U0065,30대,F,2024-06-07,2025-09-13,0,충북,organic_search,SILVER,Y,mobile,관심고객
+U0066,30대,F,2025-05-14,2025-07-23,23,서울,direct,GOLD,N,mobile,충성고객
+U0067,30대,F,2024-01-30,2025-09-06,3,충남,organic_search,BASIC,Y,mobile,휴면징후
+U0068,30대,F,2025-05-24,2025-07-22,0,서울,crm_push,BASIC,Y,mobile,이탈위험
+U0069,50대 이상,F,2024-11-02,2025-09-19,2,경기,referral,GOLD,Y,mobile,활성고객
+U0070,50대 이상,M,2025-02-09,2025-09-26,1,부산,paid_search,SILVER,Y,desktop,활성고객
+U0071,30대,F,2025-09-27,2025-07-10,0,강원,paid_search,SILVER,Y,desktop,이탈위험
+U0072,30대,M,2024-10-29,2025-07-09,1,경기,paid_search,SILVER,N,mobile,휴면징후
+U0073,50대 이상,F,2024-10-29,2025-09-28,27,경기,direct,VIP,Y,mobile,충성고객
+U0074,20대,M,2024-09-27,2025-08-22,2,인천,social,SILVER,Y,mobile,휴면징후
+U0075,50대 이상,F,2025-09-16,2025-07-10,0,서울,organic_search,GOLD,Y,desktop,이탈위험
+U0076,50대 이상,M,2025-04-09,2025-09-27,2,경남,paid_search,BASIC,Y,desktop,활성고객
+U0077,50대 이상,M,2025-01-14,2025-07-12,0,인천,organic_search,BASIC,N,mobile,이탈위험
+U0078,50대 이상,F,2025-04-10,2025-09-03,3,경기,organic_search,VIP,Y,mobile,휴면징후
+U0079,20대,M,2024-08-26,2025-08-06,0,서울,paid_search,NEW,N,desktop,이탈위험
+U0080,20대,M,2024-08-31,2025-08-12,0,서울,social,NEW,Y,mobile,이탈위험
+U0081,30대,M,2025-09-21,2025-08-13,0,충북,organic_search,BASIC,Y,desktop,이탈위험
+U0082,30대,F,2024-03-16,2025-09-17,1,경기,crm_push,NEW,Y,mobile,활성고객
+U0083,30대,M,2024-04-27,2025-09-15,2,광주,direct,SILVER,Y,desktop,활성고객
+U0084,20대,M,2024-09-18,2025-07-26,0,서울,paid_search,NEW,N,tablet,이탈위험
+U0085,50대 이상,F,2024-05-05,2025-08-04,0,전남,social,BASIC,N,tablet,이탈위험
+U0086,20대,F,2024-04-20,2025-08-22,0,부산,paid_search,BASIC,Y,mobile,이탈위험
+U0087,30대,F,2024-09-30,2025-09-03,2,경기,organic_search,GOLD,Y,desktop,휴면징후
+U0088,50대 이상,M,2025-06-27,2025-08-29,2,경기,organic_search,BASIC,N,mobile,휴면징후
+U0089,30대,F,2024-10-05,2025-09-22,2,경기,social,BASIC,Y,mobile,활성고객
+U0090,30대,M,2024-08-13,2025-08-01,0,대구,paid_search,BASIC,Y,mobile,이탈위험
+U0091,20대,M,2024-08-23,2025-07-28,0,전북,social,NEW,N,desktop,이탈위험
+U0092,30대,F,2024-10-23,2025-08-14,7,서울,organic_search,SILVER,Y,mobile,휴면징후
+U0093,30대,F,2025-02-09,2025-09-25,4,강원,direct,SILVER,Y,mobile,활성고객
+U0094,50대 이상,F,2024-05-31,2025-08-15,0,서울,paid_search,BASIC,N,mobile,이탈위험
+U0095,30대,F,2025-08-01,2025-09-26,9,제주,referral,VIP,Y,mobile,활성고객
+U0096,30대,M,2025-04-17,2025-09-15,1,서울,social,NEW,N,desktop,활성고객
+U0097,40대,F,2025-04-05,2025-09-03,14,대구,crm_push,GOLD,Y,mobile,휴면징후
+U0098,20대,F,2025-03-25,2025-09-21,6,대구,social,GOLD,Y,mobile,활성고객
+U0099,20대,F,2025-01-30,2025-07-10,1,세종,paid_search,GOLD,N,mobile,휴면징후
+U0100,40대,M,2025-09-01,2025-08-17,0,서울,referral,SILVER,Y,mobile,이탈위험
+U0101,30대,M,2025-01-06,2025-09-25,42,경남,paid_search,GOLD,Y,mobile,충성고객
+U0102,50대 이상,M,2024-12-10,2025-07-24,0,광주,direct,NEW,Y,mobile,이탈위험
+U0103,40대,M,2025-03-30,2025-09-22,11,강원,social,GOLD,Y,desktop,활성고객
+U0104,30대,F,2025-01-26,2025-09-18,0,경기,social,NEW,Y,mobile,관심고객
+U0105,40대,F,2024-05-07,2025-09-15,5,강원,paid_search,GOLD,Y,mobile,활성고객
+U0106,20대,M,2025-05-29,2025-07-26,0,경기,paid_search,BASIC,Y,mobile,이탈위험
+U0107,50대 이상,F,2024-05-22,2025-08-14,0,인천,direct,GOLD,Y,mobile,이탈위험
+U0108,20대,M,2024-09-01,2025-07-19,0,충북,social,NEW,N,mobile,이탈위험
+U0109,30대,F,2024-09-03,2025-07-13,12,서울,social,GOLD,Y,mobile,휴면징후
+U0110,20대,M,2025-01-17,2025-09-02,2,서울,paid_search,BASIC,N,desktop,휴면징후
+U0111,40대,M,2025-04-20,2025-09-07,0,인천,crm_push,NEW,N,mobile,관심고객
+U0112,20대,M,2025-02-11,2025-09-09,1,부산,crm_push,SILVER,Y,mobile,휴면징후
+U0113,30대,M,2025-03-26,2025-07-20,14,경기,crm_push,GOLD,Y,tablet,휴면징후
+U0114,20대,M,2024-04-15,2025-09-28,1,대전,organic_search,BASIC,Y,mobile,활성고객
+U0115,50대 이상,M,2024-02-28,2025-07-22,0,광주,organic_search,SILVER,N,mobile,이탈위험
+U0116,20대,F,2025-01-10,2025-07-19,0,경남,paid_search,NEW,Y,mobile,이탈위험
+U0117,20대,M,2024-04-26,2025-07-23,6,서울,organic_search,GOLD,Y,mobile,휴면징후
+U0118,30대,M,2024-03-16,2025-08-03,0,경북,social,NEW,N,mobile,이탈위험
+U0119,50대 이상,F,2024-06-27,2025-09-15,0,부산,direct,NEW,Y,mobile,관심고객
+U0120,30대,F,2024-03-29,2025-09-21,2,경기,organic_search,BASIC,Y,desktop,활성고객
+U0121,40대,M,2025-07-18,2025-07-10,0,서울,referral,BASIC,N,tablet,이탈위험
+U0122,40대,M,2025-06-15,2025-07-03,0,전북,crm_push,SILVER,Y,mobile,이탈위험
+U0123,50대 이상,M,2025-09-11,2025-09-19,15,경남,paid_search,GOLD,Y,mobile,충성고객
+U0124,20대,F,2025-07-12,2025-08-15,0,경남,paid_search,SILVER,N,mobile,이탈위험
+U0125,20대,F,2024-11-16,2025-08-11,3,경기,direct,BASIC,Y,tablet,휴면징후
+U0126,30대,M,2024-02-21,2025-08-11,0,경기,paid_search,BASIC,N,mobile,이탈위험
+U0127,30대,F,2025-05-25,2025-09-10,1,인천,direct,BASIC,Y,mobile,활성고객
+U0128,40대,F,2024-10-19,2025-08-02,12,전북,social,GOLD,N,mobile,휴면징후
+U0129,30대,M,2025-05-31,2025-09-18,0,부산,social,SILVER,Y,desktop,관심고객
+U0130,40대,M,2025-06-05,2025-08-11,0,서울,paid_search,SILVER,N,mobile,이탈위험
+U0131,20대,F,2024-11-02,2025-08-04,0,부산,social,BASIC,Y,mobile,이탈위험
+U0132,40대,F,2024-01-28,2025-08-17,0,경기,social,VIP,Y,mobile,이탈위험
+U0133,40대,M,2024-09-05,2025-09-20,0,경남,organic_search,NEW,Y,mobile,관심고객
+U0134,50대 이상,F,2024-03-04,2025-09-18,3,부산,referral,VIP,Y,mobile,활성고객
+U0135,40대,F,2024-09-27,2025-09-23,11,서울,social,SILVER,Y,mobile,활성고객
+U0136,30대,F,2024-10-07,2025-07-10,4,대구,paid_search,GOLD,Y,mobile,휴면징후
+U0137,20대,F,2024-09-19,2025-08-08,0,경기,direct,BASIC,Y,desktop,이탈위험
+U0138,30대,F,2024-02-23,2025-07-30,13,경기,organic_search,SILVER,Y,mobile,휴면징후
+U0139,30대,F,2024-10-21,2025-07-30,0,광주,paid_search,NEW,Y,desktop,이탈위험
+U0140,40대,F,2024-02-07,2025-07-30,32,경기,crm_push,GOLD,N,mobile,충성고객
+U0141,20대,F,2025-07-10,2025-08-21,2,경북,social,BASIC,Y,mobile,휴면징후
+U0142,40대,F,2025-08-04,2025-07-06,1,서울,referral,SILVER,Y,mobile,휴면징후
+U0143,30대,F,2024-01-07,2025-07-12,0,경기,paid_search,VIP,Y,desktop,이탈위험
+U0144,20대,M,2025-02-19,2025-07-08,2,경남,referral,SILVER,N,desktop,휴면징후
+U0145,30대,M,2025-09-12,2025-09-20,6,울산,paid_search,SILVER,N,desktop,활성고객
+U0146,30대,F,2025-01-05,2025-08-28,3,부산,organic_search,BASIC,Y,mobile,휴면징후
+U0147,20대,F,2024-04-03,2025-07-26,0,인천,crm_push,NEW,Y,mobile,이탈위험
+U0148,20대,M,2024-08-11,2025-07-02,0,서울,social,NEW,N,mobile,이탈위험
+U0149,20대,F,2025-03-06,2025-07-05,0,경북,paid_search,GOLD,Y,mobile,이탈위험
+U0150,20대,F,2025-06-25,2025-08-18,1,제주,organic_search,SILVER,N,desktop,휴면징후
+U0151,30대,M,2024-07-12,2025-08-08,8,세종,crm_push,SILVER,Y,mobile,휴면징후
+U0152,20대,F,2024-02-19,2025-08-27,0,서울,paid_search,BASIC,N,mobile,이탈위험
+U0153,20대,F,2024-11-24,2025-07-29,0,전남,paid_search,BASIC,Y,tablet,이탈위험
+U0154,40대,F,2024-02-18,2025-08-25,0,경남,crm_push,SILVER,Y,mobile,이탈위험
+U0155,40대,M,2024-05-27,2025-07-03,1,경북,direct,VIP,Y,mobile,휴면징후
+U0156,40대,M,2024-07-14,2025-08-18,1,경기,organic_search,NEW,Y,mobile,휴면징후
+U0157,50대 이상,M,2024-01-16,2025-08-07,4,서울,organic_search,SILVER,N,desktop,휴면징후
+U0158,20대,M,2025-04-22,2025-09-11,0,경기,social,BASIC,Y,mobile,관심고객
+U0159,30대,M,2025-07-30,2025-09-08,5,강원,direct,BASIC,Y,mobile,휴면징후
+U0160,20대,F,2024-12-11,2025-08-24,0,충남,paid_search,SILVER,Y,tablet,이탈위험
+U0161,50대 이상,F,2024-03-01,2025-07-08,0,전북,social,SILVER,Y,mobile,이탈위험
+U0162,20대,M,2024-03-02,2025-07-01,0,대전,social,BASIC,Y,mobile,이탈위험
+U0163,50대 이상,M,2025-03-16,2025-07-09,0,경북,direct,NEW,Y,mobile,이탈위험
+U0164,50대 이상,M,2024-09-06,2025-09-13,14,경기,crm_push,GOLD,N,desktop,활성고객
+U0165,20대,M,2024-06-24,2025-09-29,6,전북,organic_search,GOLD,N,mobile,활성고객
+U0166,30대,M,2024-03-17,2025-09-25,0,경기,referral,SILVER,Y,mobile,관심고객
+U0167,40대,F,2024-11-02,2025-08-26,1,경기,organic_search,BASIC,N,desktop,휴면징후
+U0168,40대,M,2024-04-10,2025-07-26,1,전북,social,SILVER,N,mobile,휴면징후
+U0169,30대,M,2025-01-19,2025-09-05,1,대전,social,NEW,Y,mobile,휴면징후
+U0170,30대,F,2024-11-20,2025-08-18,0,서울,paid_search,BASIC,N,tablet,이탈위험
+U0171,20대,M,2025-07-21,2025-08-08,0,대구,organic_search,BASIC,Y,mobile,이탈위험
+U0172,40대,M,2024-10-02,2025-08-08,0,인천,paid_search,BASIC,Y,mobile,이탈위험
+U0173,30대,M,2024-04-19,2025-09-05,21,서울,organic_search,GOLD,Y,mobile,충성고객
+U0174,50대 이상,M,2024-11-17,2025-09-09,6,경기,organic_search,SILVER,N,mobile,휴면징후
+U0175,30대,F,2024-07-23,2025-09-10,2,부산,social,BASIC,N,desktop,활성고객
+U0176,40대,F,2025-02-22,2025-09-16,1,서울,referral,BASIC,Y,mobile,활성고객
+U0177,30대,F,2025-03-04,2025-07-22,0,충북,social,GOLD,Y,mobile,이탈위험
+U0178,30대,F,2025-02-13,2025-07-19,0,경기,crm_push,NEW,Y,desktop,이탈위험
+U0179,30대,F,2025-08-25,2025-08-10,0,서울,referral,BASIC,Y,tablet,이탈위험
+U0180,20대,F,2025-05-02,2025-09-22,0,세종,organic_search,NEW,Y,mobile,관심고객
+U0181,50대 이상,F,2025-06-12,2025-07-22,0,서울,organic_search,VIP,Y,mobile,이탈위험
+U0182,30대,M,2025-08-29,2025-08-06,6,서울,social,GOLD,N,mobile,휴면징후
+U0183,20대,F,2025-05-16,2025-08-27,0,광주,social,SILVER,Y,mobile,이탈위험
+U0184,20대,F,2024-03-27,2025-07-05,0,경기,referral,NEW,Y,mobile,이탈위험
+U0185,30대,F,2024-06-26,2025-09-07,0,인천,social,BASIC,Y,mobile,관심고객
+U0186,50대 이상,F,2025-05-21,2025-08-10,1,인천,paid_search,BASIC,Y,desktop,휴면징후
+U0187,20대,F,2025-08-02,2025-07-18,0,강원,direct,NEW,Y,mobile,이탈위험
+U0188,40대,F,2025-03-11,2025-09-28,1,전북,organic_search,BASIC,N,desktop,활성고객
+U0189,20대,F,2025-08-25,2025-09-12,2,전남,referral,BASIC,Y,mobile,활성고객
+U0190,30대,M,2024-10-26,2025-07-09,1,경기,paid_search,VIP,N,desktop,휴면징후
+U0191,20대,F,2024-09-12,2025-07-14,0,경기,organic_search,GOLD,Y,mobile,이탈위험
+U0192,40대,F,2025-02-16,2025-08-15,0,경기,social,BASIC,N,tablet,이탈위험
+U0193,30대,M,2025-07-01,2025-09-28,1,경남,paid_search,BASIC,Y,desktop,활성고객
+U0194,50대 이상,F,2024-02-17,2025-07-07,0,충북,organic_search,NEW,N,mobile,이탈위험
+U0195,40대,M,2024-10-07,2025-08-08,0,경기,organic_search,SILVER,N,mobile,이탈위험
+U0196,40대,M,2025-05-03,2025-07-23,0,대구,organic_search,BASIC,Y,mobile,이탈위험
+U0197,30대,F,2024-04-14,2025-09-19,8,경기,organic_search,SILVER,N,mobile,활성고객
+U0198,20대,M,2024-08-06,2025-07-19,0,서울,social,SILVER,N,mobile,이탈위험
+U0199,30대,F,2024-09-10,2025-09-10,6,서울,paid_search,GOLD,Y,mobile,활성고객
+U0200,30대,F,2024-10-29,2025-07-01,1,충북,referral,BASIC,Y,desktop,휴면징후
+U0201,50대 이상,M,2025-08-05,2025-09-02,0,부산,social,BASIC,N,mobile,관심고객
+U0202,50대 이상,M,2024-10-20,2025-09-10,1,인천,social,SILVER,Y,mobile,활성고객
+U0203,20대,F,2025-07-03,2025-09-03,0,대구,paid_search,SILVER,N,desktop,관심고객
+U0204,20대,F,2024-02-26,2025-09-26,0,강원,paid_search,NEW,N,desktop,관심고객
+U0205,20대,M,2024-10-02,2025-08-03,0,서울,direct,BASIC,Y,desktop,이탈위험
+U0206,30대,F,2025-08-03,2025-08-02,1,서울,organic_search,GOLD,N,desktop,휴면징후
+U0207,20대,M,2024-06-02,2025-07-14,0,경남,organic_search,SILVER,N,mobile,이탈위험
+U0208,40대,F,2024-05-02,2025-09-25,0,경북,social,SILVER,N,mobile,관심고객
+U0209,20대,F,2024-01-09,2025-09-29,1,경기,paid_search,SILVER,Y,desktop,활성고객
+U0210,20대,M,2025-02-23,2025-07-28,0,부산,organic_search,SILVER,Y,mobile,이탈위험
+U0211,20대,F,2025-03-05,2025-09-23,5,서울,social,SILVER,Y,tablet,활성고객
+U0212,50대 이상,M,2024-04-07,2025-09-11,0,광주,social,BASIC,Y,mobile,관심고객
+U0213,30대,F,2024-11-30,2025-07-15,0,경기,paid_search,NEW,N,mobile,이탈위험
+U0214,30대,F,2024-07-31,2025-09-27,0,인천,social,NEW,N,desktop,관심고객
+U0215,20대,F,2024-12-30,2025-08-24,5,서울,paid_search,SILVER,Y,mobile,휴면징후
+U0216,20대,F,2024-05-04,2025-07-03,0,전북,organic_search,NEW,N,tablet,이탈위험
+U0217,40대,M,2024-03-07,2025-08-06,0,광주,organic_search,NEW,N,desktop,이탈위험
+U0218,40대,M,2024-01-31,2025-08-20,0,경기,paid_search,GOLD,Y,mobile,이탈위험
+U0219,30대,F,2025-05-05,2025-08-01,0,경기,organic_search,NEW,N,mobile,이탈위험
+U0220,30대,F,2025-05-11,2025-08-26,0,부산,paid_search,BASIC,Y,mobile,이탈위험
+U0221,40대,F,2024-06-12,2025-07-19,0,대전,organic_search,SILVER,N,mobile,이탈위험
+U0222,50대 이상,F,2024-06-26,2025-09-19,0,대구,organic_search,SILVER,N,desktop,관심고객
+U0223,40대,F,2025-05-19,2025-09-07,0,서울,social,NEW,Y,mobile,관심고객
+U0224,30대,M,2024-11-27,2025-07-12,0,서울,organic_search,NEW,Y,desktop,이탈위험
+U0225,20대,M,2024-05-19,2025-08-29,0,세종,crm_push,SILVER,Y,mobile,이탈위험
+U0226,30대,F,2024-06-28,2025-09-06,1,세종,paid_search,NEW,Y,mobile,휴면징후
+U0227,40대,F,2025-08-02,2025-08-23,0,인천,organic_search,NEW,Y,mobile,이탈위험
+U0228,50대 이상,M,2024-09-28,2025-08-29,0,울산,organic_search,SILVER,N,mobile,이탈위험
+U0229,30대,F,2024-04-13,2025-08-10,2,충북,direct,SILVER,Y,mobile,휴면징후
+U0230,20대,M,2025-01-19,2025-09-21,38,서울,organic_search,VIP,Y,tablet,충성고객
+U0231,30대,M,2024-12-05,2025-09-02,1,서울,organic_search,SILVER,N,desktop,휴면징후
+U0232,40대,M,2025-01-04,2025-09-16,0,서울,organic_search,SILVER,Y,desktop,관심고객
+U0233,20대,M,2025-05-15,2025-07-09,0,경기,crm_push,BASIC,Y,mobile,이탈위험
+U0234,40대,F,2024-06-03,2025-07-14,11,대전,direct,SILVER,Y,mobile,휴면징후
+U0235,40대,F,2025-08-09,2025-08-22,8,인천,crm_push,GOLD,N,mobile,휴면징후
+U0236,40대,M,2024-06-20,2025-08-05,2,충남,crm_push,BASIC,N,mobile,휴면징후
+U0237,50대 이상,F,2024-03-09,2025-08-19,0,부산,organic_search,GOLD,Y,mobile,이탈위험
+U0238,20대,M,2025-08-03,2025-07-29,0,강원,social,GOLD,Y,tablet,이탈위험
+U0239,30대,F,2025-09-15,2025-09-08,2,서울,social,SILVER,N,mobile,휴면징후
+U0240,50대 이상,F,2024-01-21,2025-09-10,5,충북,paid_search,GOLD,N,mobile,활성고객
+U0241,40대,M,2025-03-02,2025-09-02,5,서울,social,GOLD,Y,mobile,휴면징후
+U0242,20대,F,2025-02-17,2025-09-02,0,전남,organic_search,NEW,Y,desktop,관심고객
+U0243,40대,M,2025-04-20,2025-07-19,0,광주,social,NEW,Y,mobile,이탈위험
+U0244,40대,M,2024-04-02,2025-08-21,6,경기,paid_search,SILVER,N,mobile,휴면징후
+U0245,40대,F,2024-01-10,2025-08-31,3,서울,social,SILVER,Y,mobile,휴면징후
+U0246,50대 이상,F,2025-04-15,2025-07-31,0,인천,paid_search,SILVER,Y,mobile,이탈위험
+U0247,40대,F,2024-11-01,2025-09-07,1,인천,referral,BASIC,Y,mobile,휴면징후
+U0248,20대,M,2025-09-06,2025-08-24,0,경기,paid_search,NEW,Y,mobile,이탈위험
+U0249,50대 이상,F,2024-12-17,2025-09-22,2,경기,direct,SILVER,N,mobile,활성고객
+U0250,20대,F,2024-09-21,2025-07-24,0,부산,direct,GOLD,N,desktop,이탈위험
+U0251,50대 이상,M,2025-08-22,2025-08-04,0,전남,paid_search,GOLD,Y,mobile,이탈위험
+U0252,30대,M,2024-06-03,2025-09-25,2,서울,organic_search,BASIC,N,mobile,활성고객
+U0253,30대,M,2024-02-29,2025-08-20,0,경기,organic_search,NEW,N,desktop,이탈위험
+U0254,30대,F,2025-01-27,2025-08-21,23,부산,organic_search,GOLD,N,desktop,충성고객
+U0255,50대 이상,M,2024-04-15,2025-09-14,0,대구,paid_search,SILVER,Y,mobile,관심고객
+U0256,50대 이상,M,2025-05-16,2025-09-24,1,서울,paid_search,GOLD,Y,tablet,활성고객
+U0257,20대,M,2024-02-08,2025-07-02,0,광주,paid_search,SILVER,Y,desktop,이탈위험
+U0258,30대,F,2025-04-30,2025-07-20,0,서울,referral,NEW,Y,desktop,이탈위험
+U0259,50대 이상,F,2025-09-24,2025-07-12,0,서울,organic_search,NEW,Y,mobile,이탈위험
+U0260,20대,F,2024-07-31,2025-08-31,0,인천,referral,NEW,Y,mobile,이탈위험
+U0261,20대,F,2024-09-19,2025-09-26,3,인천,referral,BASIC,Y,tablet,활성고객
+U0262,40대,M,2024-02-16,2025-08-27,10,서울,organic_search,SILVER,N,mobile,휴면징후
+U0263,30대,M,2025-01-29,2025-09-14,1,인천,referral,GOLD,Y,mobile,활성고객
+U0264,40대,F,2024-07-04,2025-07-04,11,충북,social,GOLD,N,mobile,휴면징후
+U0265,30대,M,2024-11-17,2025-09-17,1,전남,organic_search,SILVER,N,mobile,활성고객
+U0266,20대,F,2024-09-11,2025-08-30,0,대전,social,NEW,N,mobile,이탈위험
+U0267,30대,F,2024-06-18,2025-09-08,4,인천,organic_search,VIP,Y,mobile,휴면징후
+U0268,40대,M,2025-05-25,2025-09-03,1,서울,social,SILVER,Y,mobile,휴면징후
+U0269,30대,M,2025-06-04,2025-09-16,6,대전,social,SILVER,N,mobile,활성고객
+U0270,40대,M,2024-08-15,2025-08-05,0,경기,organic_search,SILVER,Y,mobile,이탈위험
+U0271,40대,M,2025-09-17,2025-09-21,0,서울,organic_search,NEW,N,desktop,관심고객
+U0272,30대,F,2025-04-06,2025-09-30,22,대구,social,GOLD,Y,mobile,충성고객
+U0273,50대 이상,F,2024-06-26,2025-08-30,1,서울,direct,BASIC,N,mobile,휴면징후
+U0274,30대,M,2024-10-28,2025-09-24,1,서울,social,SILVER,N,mobile,활성고객
+U0275,20대,M,2024-10-24,2025-08-23,0,경남,referral,SILVER,N,mobile,이탈위험
+U0276,30대,F,2025-03-03,2025-07-05,0,경북,referral,GOLD,Y,mobile,이탈위험
+U0277,20대,F,2024-10-20,2025-09-20,1,서울,referral,SILVER,Y,mobile,활성고객
+U0278,30대,M,2025-07-28,2025-07-31,0,부산,paid_search,SILVER,N,desktop,이탈위험
+U0279,30대,M,2024-09-14,2025-09-19,4,전남,organic_search,BASIC,Y,desktop,활성고객
+U0280,20대,F,2024-07-17,2025-07-09,0,서울,paid_search,NEW,Y,desktop,이탈위험
+U0281,30대,M,2024-12-04,2025-09-26,16,경남,social,VIP,Y,mobile,충성고객
+U0282,20대,F,2025-06-22,2025-07-29,0,서울,organic_search,BASIC,Y,mobile,이탈위험
+U0283,30대,M,2025-09-25,2025-07-08,18,제주,social,VIP,Y,desktop,충성고객
+U0284,40대,M,2024-04-26,2025-07-10,4,부산,paid_search,GOLD,N,mobile,휴면징후
+U0285,20대,F,2024-04-08,2025-07-14,0,경남,organic_search,NEW,Y,mobile,이탈위험
+U0286,40대,F,2025-03-21,2025-08-26,0,경남,referral,NEW,Y,desktop,이탈위험
+U0287,30대,M,2024-09-21,2025-08-25,0,인천,paid_search,BASIC,Y,mobile,이탈위험
+U0288,40대,M,2025-05-29,2025-08-16,0,충북,organic_search,NEW,N,mobile,이탈위험
+U0289,20대,M,2025-07-12,2025-08-18,8,광주,paid_search,GOLD,N,mobile,휴면징후
+U0290,20대,F,2025-02-07,2025-07-28,0,경남,social,SILVER,N,mobile,이탈위험
+U0291,20대,F,2024-07-17,2025-09-03,1,대전,organic_search,NEW,N,mobile,휴면징후
+U0292,20대,M,2025-08-17,2025-09-15,1,경기,social,SILVER,Y,mobile,활성고객
+U0293,20대,F,2025-08-02,2025-07-14,0,충남,social,NEW,Y,tablet,이탈위험
+U0294,40대,M,2025-05-06,2025-08-29,3,경기,social,BASIC,Y,mobile,휴면징후
+U0295,50대 이상,M,2024-03-18,2025-09-18,0,전북,crm_push,SILVER,Y,mobile,관심고객
+U0296,30대,F,2024-06-01,2025-09-17,2,경기,paid_search,SILVER,Y,desktop,활성고객
+U0297,40대,F,2025-09-20,2025-09-16,0,강원,referral,NEW,Y,mobile,관심고객
+U0298,20대,F,2024-08-25,2025-09-02,0,경기,organic_search,NEW,N,mobile,관심고객
+U0299,20대,F,2025-06-17,2025-08-21,1,경기,referral,BASIC,Y,desktop,휴면징후
+U0300,20대,F,2024-08-16,2025-08-15,2,경기,social,BASIC,Y,desktop,휴면징후
+U0301,40대,M,2024-07-10,2025-08-16,0,대구,organic_search,SILVER,Y,desktop,이탈위험
+U0302,40대,M,2024-09-06,2025-09-17,0,대구,organic_search,SILVER,Y,mobile,관심고객
+U0303,30대,F,2024-01-20,2025-09-08,10,세종,direct,GOLD,Y,desktop,휴면징후
+U0304,20대,F,2024-07-05,2025-07-13,0,부산,social,SILVER,N,mobile,이탈위험
+U0305,30대,F,2025-03-05,2025-07-05,22,대구,direct,VIP,Y,mobile,충성고객
+U0306,30대,M,2025-03-17,2025-09-24,6,경기,social,SILVER,Y,mobile,활성고객
+U0307,40대,M,2024-05-17,2025-07-23,0,강원,paid_search,NEW,Y,desktop,이탈위험
+U0308,30대,F,2025-01-19,2025-09-19,4,대전,referral,BASIC,Y,mobile,활성고객
+U0309,50대 이상,M,2024-07-27,2025-08-23,0,충북,social,BASIC,Y,mobile,이탈위험
+U0310,40대,F,2024-08-23,2025-07-22,0,울산,social,NEW,Y,mobile,이탈위험
+U0311,50대 이상,M,2024-04-03,2025-08-13,0,인천,direct,NEW,Y,mobile,이탈위험
+U0312,20대,F,2024-02-28,2025-09-02,2,충남,crm_push,BASIC,Y,mobile,휴면징후
+U0313,30대,M,2024-06-22,2025-08-13,5,경기,referral,VIP,Y,mobile,휴면징후
+U0314,20대,F,2024-04-02,2025-08-30,0,세종,social,BASIC,Y,mobile,이탈위험
+U0315,20대,M,2024-04-19,2025-09-15,0,인천,social,NEW,Y,mobile,관심고객
+U0316,30대,F,2024-12-13,2025-08-08,0,인천,crm_push,BASIC,Y,mobile,이탈위험
+U0317,40대,M,2024-12-27,2025-09-30,3,서울,social,BASIC,Y,desktop,활성고객
+U0318,30대,F,2024-10-02,2025-09-07,0,강원,organic_search,NEW,N,tablet,관심고객
+U0319,40대,M,2024-04-19,2025-07-16,6,서울,organic_search,GOLD,Y,tablet,휴면징후
+U0320,50대 이상,F,2024-10-08,2025-07-16,0,제주,social,BASIC,Y,desktop,이탈위험
+U0321,30대,F,2024-06-27,2025-07-20,4,서울,social,BASIC,Y,mobile,휴면징후
+U0322,20대,M,2024-10-02,2025-09-15,1,대구,social,BASIC,Y,mobile,활성고객
+U0323,50대 이상,F,2024-04-12,2025-09-01,8,충남,direct,GOLD,Y,mobile,휴면징후
+U0324,20대,F,2025-06-13,2025-07-02,0,경기,social,BASIC,N,mobile,이탈위험
+U0325,40대,M,2024-12-08,2025-09-20,1,경기,paid_search,SILVER,Y,mobile,활성고객
+U0326,40대,F,2024-10-18,2025-08-31,1,대전,paid_search,SILVER,N,mobile,휴면징후
+U0327,40대,M,2025-09-19,2025-07-20,0,전북,social,NEW,Y,mobile,이탈위험
+U0328,30대,F,2025-01-06,2025-08-24,0,부산,direct,NEW,N,mobile,이탈위험
+U0329,20대,M,2024-04-07,2025-08-05,0,경북,organic_search,NEW,Y,mobile,이탈위험
+U0330,50대 이상,M,2024-09-10,2025-09-15,0,인천,direct,BASIC,Y,mobile,관심고객
+U0331,30대,M,2025-03-31,2025-09-21,5,경남,organic_search,BASIC,Y,mobile,활성고객
+U0332,50대 이상,F,2024-08-20,2025-08-10,0,인천,direct,BASIC,Y,mobile,이탈위험
+U0333,40대,F,2025-05-03,2025-07-14,0,강원,paid_search,BASIC,N,desktop,이탈위험
+U0334,40대,M,2025-01-22,2025-09-21,3,서울,organic_search,BASIC,N,mobile,활성고객
+U0335,20대,M,2024-03-11,2025-07-05,0,경기,organic_search,SILVER,Y,mobile,이탈위험
+U0336,50대 이상,M,2024-05-08,2025-08-15,0,세종,direct,NEW,Y,mobile,이탈위험
+U0337,20대,F,2024-05-29,2025-08-04,3,충북,organic_search,BASIC,Y,mobile,휴면징후
+U0338,40대,M,2024-02-04,2025-08-06,1,세종,organic_search,SILVER,Y,mobile,휴면징후
+U0339,50대 이상,F,2024-09-16,2025-08-01,0,경기,social,NEW,N,mobile,이탈위험
+U0340,30대,M,2024-09-05,2025-08-03,0,서울,organic_search,BASIC,Y,desktop,이탈위험
+U0341,50대 이상,F,2024-03-02,2025-09-26,0,광주,organic_search,SILVER,Y,desktop,관심고객
+U0342,40대,M,2025-01-21,2025-09-06,1,서울,paid_search,BASIC,Y,desktop,휴면징후
+U0343,40대,M,2025-09-05,2025-07-25,0,부산,crm_push,NEW,Y,mobile,이탈위험
+U0344,20대,M,2025-01-07,2025-09-18,1,경기,direct,SILVER,Y,desktop,활성고객
+U0345,20대,F,2024-04-23,2025-08-02,0,대전,organic_search,GOLD,Y,mobile,이탈위험
+U0346,30대,F,2025-09-30,2025-08-15,10,경기,referral,SILVER,Y,mobile,휴면징후
+U0347,30대,F,2025-03-01,2025-09-07,5,충북,direct,SILVER,Y,mobile,휴면징후
+U0348,20대,M,2025-01-29,2025-09-21,2,부산,organic_search,SILVER,Y,mobile,활성고객
+U0349,30대,F,2024-04-16,2025-09-11,25,서울,organic_search,GOLD,Y,mobile,충성고객
+U0350,40대,M,2024-11-27,2025-08-13,0,부산,social,SILVER,N,mobile,이탈위험
+U0351,50대 이상,F,2025-06-14,2025-09-09,3,경북,organic_search,VIP,Y,mobile,휴면징후
+U0352,30대,F,2024-06-07,2025-09-19,1,인천,organic_search,BASIC,N,mobile,활성고객
+U0353,20대,M,2024-11-28,2025-09-24,5,서울,direct,SILVER,Y,desktop,활성고객
+U0354,20대,M,2024-12-08,2025-09-01,1,충남,paid_search,GOLD,N,mobile,휴면징후
+U0355,30대,M,2024-02-12,2025-09-20,4,부산,paid_search,SILVER,Y,mobile,활성고객
+U0356,20대,M,2025-02-07,2025-08-23,0,경기,organic_search,SILVER,Y,mobile,이탈위험
+U0357,30대,M,2025-02-08,2025-07-22,0,서울,referral,SILVER,Y,mobile,이탈위험
+U0358,40대,M,2024-12-22,2025-08-20,1,경기,organic_search,SILVER,Y,mobile,휴면징후
+U0359,40대,M,2025-01-17,2025-09-23,0,세종,organic_search,SILVER,Y,mobile,관심고객
+U0360,20대,F,2024-12-05,2025-08-23,1,부산,organic_search,BASIC,Y,mobile,휴면징후
+U0361,30대,F,2024-02-14,2025-09-22,2,서울,paid_search,SILVER,Y,mobile,활성고객
+U0362,50대 이상,M,2024-04-20,2025-08-28,0,전남,organic_search,BASIC,Y,mobile,이탈위험
+U0363,20대,F,2025-04-13,2025-09-22,2,울산,social,GOLD,Y,mobile,활성고객
+U0364,20대,F,2025-05-28,2025-09-11,7,서울,paid_search,GOLD,N,mobile,활성고객
+U0365,20대,F,2025-06-17,2025-07-11,0,대구,crm_push,BASIC,Y,mobile,이탈위험
+U0366,40대,F,2024-07-26,2025-08-30,17,경기,direct,GOLD,Y,desktop,충성고객
+U0367,30대,F,2024-07-07,2025-07-27,2,경북,paid_search,SILVER,N,desktop,휴면징후
+U0368,50대 이상,M,2024-07-11,2025-07-08,0,서울,organic_search,SILVER,Y,desktop,이탈위험
+U0369,40대,F,2025-05-29,2025-09-25,0,인천,direct,NEW,Y,mobile,관심고객
+U0370,50대 이상,F,2024-08-15,2025-09-11,2,제주,direct,NEW,N,desktop,활성고객
+U0371,20대,M,2024-02-12,2025-08-29,1,전북,social,BASIC,N,desktop,휴면징후
+U0372,20대,M,2024-02-13,2025-09-10,3,경기,direct,VIP,Y,mobile,활성고객
+U0373,20대,F,2025-04-17,2025-08-24,1,경기,organic_search,SILVER,N,desktop,휴면징후
+U0374,30대,F,2025-07-13,2025-08-09,0,경기,organic_search,NEW,Y,mobile,이탈위험
+U0375,50대 이상,F,2024-05-06,2025-08-06,0,울산,organic_search,NEW,N,mobile,이탈위험
+U0376,20대,M,2024-12-09,2025-09-25,5,대전,social,GOLD,Y,mobile,활성고객
+U0377,30대,M,2024-05-14,2025-07-29,0,서울,crm_push,NEW,Y,desktop,이탈위험
+U0378,40대,M,2025-03-28,2025-09-05,2,대구,organic_search,BASIC,Y,mobile,휴면징후
+U0379,20대,F,2025-08-14,2025-08-23,0,경기,direct,NEW,Y,tablet,이탈위험
+U0380,40대,M,2025-04-11,2025-09-18,7,경기,direct,SILVER,Y,mobile,활성고객
+U0381,20대,F,2024-10-08,2025-08-16,0,경기,paid_search,NEW,Y,mobile,이탈위험
+U0382,50대 이상,F,2024-10-21,2025-09-24,4,전북,social,BASIC,Y,mobile,활성고객
+U0383,40대,F,2024-08-26,2025-07-14,0,제주,referral,NEW,Y,mobile,이탈위험
+U0384,30대,F,2024-01-12,2025-07-22,0,대전,referral,NEW,Y,mobile,이탈위험
+U0385,30대,F,2024-06-28,2025-09-29,0,전북,organic_search,BASIC,Y,tablet,관심고객
+U0386,50대 이상,F,2025-02-27,2025-09-26,0,서울,crm_push,BASIC,N,mobile,관심고객
+U0387,40대,M,2024-06-01,2025-09-28,2,서울,paid_search,SILVER,N,tablet,활성고객
+U0388,40대,M,2024-02-02,2025-08-04,1,서울,paid_search,BASIC,N,desktop,휴면징후
+U0389,20대,M,2025-06-02,2025-07-05,0,인천,organic_search,NEW,N,mobile,이탈위험
+U0390,50대 이상,F,2024-05-15,2025-08-03,0,서울,organic_search,GOLD,Y,mobile,이탈위험
+U0391,20대,F,2024-11-15,2025-07-22,0,강원,organic_search,NEW,Y,mobile,이탈위험
+U0392,20대,M,2025-09-29,2025-09-06,4,서울,social,BASIC,Y,mobile,휴면징후
+U0393,50대 이상,F,2024-02-21,2025-09-21,0,인천,organic_search,NEW,Y,mobile,관심고객
+U0394,40대,F,2024-11-15,2025-09-03,8,서울,paid_search,SILVER,Y,desktop,휴면징후
+U0395,40대,M,2024-11-13,2025-09-23,6,울산,referral,GOLD,Y,mobile,활성고객
+U0396,40대,F,2025-04-09,2025-09-17,1,서울,social,BASIC,N,mobile,활성고객
+U0397,40대,M,2025-07-23,2025-08-13,3,충북,referral,BASIC,Y,mobile,휴면징후
+U0398,40대,M,2025-03-21,2025-09-19,1,경기,social,NEW,N,desktop,활성고객
+U0399,30대,F,2024-06-29,2025-08-22,6,경기,paid_search,SILVER,Y,mobile,휴면징후
+U0400,20대,F,2024-01-01,2025-09-26,0,대전,direct,BASIC,Y,mobile,관심고객
+U0401,20대,F,2025-03-21,2025-09-12,1,경북,direct,BASIC,Y,tablet,활성고객
+U0402,20대,F,2025-01-02,2025-08-13,1,경기,organic_search,BASIC,Y,mobile,휴면징후
+U0403,20대,M,2025-07-22,2025-08-01,0,경남,paid_search,NEW,N,desktop,이탈위험
+U0404,30대,M,2024-05-19,2025-09-17,3,광주,organic_search,BASIC,N,mobile,활성고객
+U0405,30대,M,2024-07-09,2025-09-02,1,서울,social,SILVER,N,mobile,휴면징후
+U0406,40대,M,2025-05-08,2025-08-29,6,서울,crm_push,SILVER,N,desktop,휴면징후
+U0407,30대,F,2024-03-20,2025-08-29,0,부산,referral,SILVER,N,mobile,이탈위험
+U0408,20대,M,2024-10-28,2025-07-19,0,서울,paid_search,SILVER,N,tablet,이탈위험
+U0409,50대 이상,F,2024-01-28,2025-08-24,0,서울,paid_search,GOLD,Y,mobile,이탈위험
+U0410,50대 이상,F,2025-04-02,2025-09-20,0,서울,paid_search,BASIC,Y,desktop,관심고객
+U0411,20대,F,2025-02-26,2025-08-09,2,경기,direct,SILVER,Y,mobile,휴면징후
+U0412,20대,M,2024-11-04,2025-07-28,0,경남,social,BASIC,N,tablet,이탈위험
+U0413,40대,M,2024-11-19,2025-09-09,39,대전,crm_push,VIP,N,mobile,충성고객
+U0414,20대,F,2025-04-17,2025-08-18,0,강원,direct,BASIC,Y,desktop,이탈위험
+U0415,40대,M,2024-04-10,2025-09-22,0,대전,social,SILVER,Y,mobile,관심고객
+U0416,20대,F,2024-05-04,2025-08-29,1,서울,referral,NEW,N,desktop,휴면징후
+U0417,20대,F,2024-03-18,2025-08-03,0,경남,referral,BASIC,N,mobile,이탈위험
+U0418,30대,M,2024-03-02,2025-08-04,0,충남,paid_search,NEW,N,mobile,이탈위험
+U0419,30대,F,2024-04-18,2025-07-05,0,울산,crm_push,NEW,Y,mobile,이탈위험
+U0420,20대,M,2024-06-04,2025-09-08,1,경북,referral,BASIC,N,mobile,휴면징후
+U0421,40대,F,2024-05-04,2025-07-28,3,경남,social,SILVER,Y,mobile,휴면징후
+U0422,20대,M,2024-10-23,2025-08-23,1,서울,referral,BASIC,Y,mobile,휴면징후
+U0423,30대,F,2024-05-23,2025-09-01,6,서울,organic_search,SILVER,Y,tablet,휴면징후
+U0424,20대,F,2025-02-19,2025-07-08,0,충남,organic_search,BASIC,N,mobile,이탈위험
+U0425,20대,F,2025-04-27,2025-09-20,2,광주,crm_push,SILVER,Y,mobile,활성고객
+U0426,20대,F,2024-04-26,2025-07-04,2,충남,social,SILVER,Y,mobile,휴면징후
+U0427,30대,M,2024-08-06,2025-09-08,0,대구,direct,NEW,Y,mobile,관심고객
+U0428,20대,M,2025-09-19,2025-09-10,1,서울,paid_search,NEW,Y,desktop,활성고객
+U0429,40대,F,2024-05-09,2025-09-20,0,광주,organic_search,BASIC,N,mobile,관심고객
+U0430,30대,F,2024-12-22,2025-09-15,16,부산,social,VIP,N,mobile,충성고객
+U0431,20대,M,2024-04-25,2025-07-12,0,대전,direct,BASIC,Y,tablet,이탈위험
+U0432,20대,F,2025-04-09,2025-08-15,0,강원,organic_search,NEW,N,tablet,이탈위험
+U0433,30대,F,2024-11-29,2025-07-16,0,서울,paid_search,BASIC,Y,mobile,이탈위험
+U0434,30대,M,2025-09-16,2025-08-02,14,경기,social,SILVER,N,mobile,휴면징후
+U0435,20대,F,2025-04-14,2025-08-19,2,강원,social,BASIC,Y,mobile,휴면징후
+U0436,30대,F,2024-08-09,2025-09-29,1,전북,social,SILVER,N,mobile,활성고객
+U0437,20대,F,2024-01-06,2025-09-04,1,서울,social,SILVER,Y,tablet,휴면징후
+U0438,20대,F,2025-02-20,2025-09-28,1,서울,crm_push,SILVER,Y,mobile,활성고객
+U0439,20대,M,2024-05-21,2025-09-29,2,경기,direct,BASIC,Y,desktop,활성고객
+U0440,20대,M,2024-10-03,2025-08-31,0,대구,referral,NEW,N,mobile,이탈위험
+U0441,50대 이상,M,2025-01-09,2025-08-11,1,서울,social,SILVER,N,mobile,휴면징후
+U0442,30대,F,2025-08-17,2025-09-02,9,울산,direct,SILVER,Y,desktop,휴면징후
+U0443,30대,F,2024-05-05,2025-08-26,4,부산,social,GOLD,Y,desktop,휴면징후
+U0444,50대 이상,M,2025-02-04,2025-07-17,0,경기,crm_push,NEW,Y,tablet,이탈위험
+U0445,30대,F,2024-05-15,2025-08-11,0,경기,social,NEW,Y,desktop,이탈위험
+U0446,40대,F,2025-05-12,2025-08-09,0,울산,social,BASIC,Y,desktop,이탈위험
+U0447,50대 이상,F,2024-02-18,2025-09-23,0,경기,organic_search,SILVER,Y,tablet,관심고객
+U0448,40대,M,2024-04-29,2025-08-05,0,경기,organic_search,BASIC,Y,mobile,이탈위험
+U0449,50대 이상,F,2024-05-04,2025-08-11,0,경기,crm_push,NEW,Y,mobile,이탈위험
+U0450,30대,M,2025-08-10,2025-08-05,1,충남,referral,GOLD,Y,desktop,휴면징후
+U0451,20대,F,2024-08-13,2025-08-01,0,서울,social,SILVER,Y,mobile,이탈위험
+U0452,30대,F,2024-03-30,2025-07-05,0,경기,crm_push,BASIC,Y,mobile,이탈위험
+U0453,30대,M,2024-12-19,2025-08-06,0,제주,paid_search,NEW,N,desktop,이탈위험
+U0454,50대 이상,F,2025-02-28,2025-08-31,0,대구,organic_search,NEW,Y,mobile,이탈위험
+U0455,20대,M,2024-10-06,2025-09-27,0,부산,social,SILVER,Y,desktop,관심고객
+U0456,40대,M,2025-07-26,2025-07-21,0,경기,direct,NEW,Y,desktop,이탈위험
+U0457,20대,F,2024-09-07,2025-09-09,3,강원,organic_search,VIP,Y,mobile,휴면징후
+U0458,50대 이상,F,2025-01-17,2025-07-12,0,대구,social,NEW,Y,desktop,이탈위험
+U0459,30대,F,2024-12-30,2025-07-25,0,경기,organic_search,NEW,Y,mobile,이탈위험
+U0460,20대,F,2024-11-04,2025-07-12,0,울산,paid_search,BASIC,Y,mobile,이탈위험
+U0461,50대 이상,M,2024-08-11,2025-09-18,9,경기,organic_search,GOLD,Y,mobile,활성고객
+U0462,20대,F,2024-03-19,2025-07-17,0,서울,organic_search,BASIC,N,mobile,이탈위험
+U0463,20대,F,2024-05-01,2025-07-25,0,전남,organic_search,BASIC,Y,mobile,이탈위험
+U0464,40대,F,2024-02-13,2025-07-22,0,서울,organic_search,BASIC,Y,mobile,이탈위험
+U0465,20대,F,2025-08-24,2025-09-06,1,서울,crm_push,NEW,N,mobile,휴면징후
+U0466,40대,M,2025-08-06,2025-09-04,0,충남,organic_search,BASIC,N,desktop,관심고객
+U0467,50대 이상,F,2025-05-01,2025-08-17,3,대구,paid_search,VIP,Y,mobile,휴면징후
+U0468,50대 이상,M,2024-04-22,2025-08-15,0,인천,social,BASIC,N,mobile,이탈위험
+U0469,40대,F,2024-08-19,2025-07-01,1,경기,social,NEW,Y,desktop,휴면징후
+U0470,30대,M,2025-03-24,2025-09-12,15,대전,social,VIP,N,mobile,충성고객
+U0471,30대,F,2024-05-05,2025-09-13,3,경기,paid_search,SILVER,N,mobile,활성고객
+U0472,30대,M,2025-05-11,2025-09-02,0,서울,social,NEW,Y,mobile,관심고객
+U0473,30대,M,2024-07-02,2025-07-26,0,대전,paid_search,SILVER,Y,mobile,이탈위험
+U0474,30대,F,2025-07-09,2025-09-11,9,전남,paid_search,VIP,Y,mobile,활성고객
+U0475,30대,M,2025-07-24,2025-08-22,0,충북,referral,NEW,Y,desktop,이탈위험
+U0476,40대,F,2025-05-02,2025-09-02,1,서울,social,BASIC,Y,mobile,휴면징후
+U0477,20대,M,2025-08-20,2025-08-08,0,경북,organic_search,NEW,Y,mobile,이탈위험
+U0478,30대,F,2024-03-08,2025-08-29,4,서울,direct,BASIC,Y,mobile,휴면징후
+U0479,30대,M,2024-11-20,2025-09-25,4,경기,paid_search,SILVER,Y,mobile,활성고객
+U0480,30대,M,2025-03-22,2025-07-19,0,광주,organic_search,NEW,N,tablet,이탈위험
+U0481,40대,M,2025-08-15,2025-09-17,0,경기,organic_search,SILVER,Y,mobile,관심고객
+U0482,30대,F,2024-07-23,2025-09-06,8,경기,social,SILVER,Y,mobile,휴면징후
+U0483,40대,F,2025-04-23,2025-08-12,24,광주,paid_search,GOLD,N,desktop,충성고객
+U0484,40대,F,2025-03-21,2025-08-09,1,전남,social,SILVER,N,desktop,휴면징후
+U0485,20대,M,2024-01-29,2025-07-09,0,전북,paid_search,BASIC,Y,mobile,이탈위험
+U0486,40대,F,2024-06-29,2025-07-29,7,서울,referral,SILVER,Y,desktop,휴면징후
+U0487,50대 이상,F,2024-04-02,2025-09-25,0,전북,paid_search,BASIC,Y,desktop,관심고객
+U0488,20대,F,2024-08-31,2025-08-07,7,충북,social,GOLD,N,mobile,휴면징후
+U0489,50대 이상,M,2024-09-17,2025-09-09,1,서울,direct,SILVER,Y,mobile,휴면징후
+U0490,20대,F,2025-01-11,2025-08-30,2,서울,direct,BASIC,N,tablet,휴면징후
+U0491,30대,M,2025-01-06,2025-09-30,0,대전,crm_push,BASIC,Y,mobile,관심고객
+U0492,20대,M,2024-06-13,2025-09-14,0,광주,crm_push,SILVER,Y,desktop,관심고객
+U0493,20대,M,2024-04-12,2025-08-23,2,울산,direct,BASIC,Y,mobile,휴면징후
+U0494,40대,F,2024-05-19,2025-08-05,0,서울,organic_search,BASIC,Y,mobile,이탈위험
+U0495,30대,F,2025-04-07,2025-07-13,6,세종,social,SILVER,N,mobile,휴면징후
+U0496,50대 이상,F,2024-08-17,2025-07-23,0,서울,organic_search,SILVER,Y,mobile,이탈위험
+U0497,30대,F,2024-06-01,2025-07-27,0,경기,organic_search,NEW,N,tablet,이탈위험
+U0498,40대,M,2024-09-29,2025-08-06,47,인천,paid_search,VIP,Y,mobile,충성고객
+U0499,20대,M,2025-09-24,2025-09-22,1,경기,social,SILVER,Y,mobile,활성고객
+U0500,40대,F,2024-09-19,2025-09-26,3,부산,organic_search,GOLD,Y,mobile,활성고객

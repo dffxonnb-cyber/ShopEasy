@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="./looker-dashboard/" />
+    <title>ShopEasy Looker 스타일 대시보드</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark">
+            <img src="./assets/brand-logo.png" alt="ShopEasy 브랜드 로고" />
+          </div>
+          <div class="brand-copy">
+            <p class="eyebrow">Static Visualization / Looker-style View</p>
+            <h1>ShopEasy 전환·이탈 통합 대시보드</h1>
+            <p class="subtitle">
+              Looker 없이도 보고서처럼 보이도록 구성한 정적 대시보드 버전입니다.
+            </p>
+          </div>
+        </div>
+        <div class="topbar-side">
+          <div class="chip-stack">
+            <span class="chip chip-strong">기간 2025.07 - 2025.09</span>
+            <span class="chip">UTF-8 한국어 안전 렌더링</span>
+            <span class="chip">CSV 더미 데이터 기반</span>
+          </div>
+          <div class="status-card">
+            <span class="status-label">Dashboard Status</span>
+            <strong>Looker 스타일 정적 시각화</strong>
+            <span class="status-meta">로컬 파일로 바로 실행 가능</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="filter-strip" aria-label="대시보드 필터 상태">
+        <div class="filter-card">
+          <span class="filter-label">데이터 소스</span>
+          <strong>주문 / 세션 / 사용자 CSV</strong>
+        </div>
+        <div class="filter-card">
+          <span class="filter-label">기준</span>
+          <strong>완료 주문 중심 KPI</strong>
+        </div>
+        <div class="filter-card">
+          <span class="filter-label">분석 초점</span>
+          <strong>전환율 · 이탈률 · 페이지 퍼널</strong>
+        </div>
+        <div class="filter-card">
+          <span class="filter-label">뷰 타입</span>
+          <strong>Looker 유사 레이아웃</strong>
+        </div>
+      </section>
+
+      <section class="kpi-grid" id="kpi-grid" aria-label="핵심 지표"></section>
+
+      <main class="dashboard-grid">
+        <section class="panel span-8">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Orders Overview</p>
+              <h2>월별 주문 및 완료율</h2>
+            </div>
+            <div class="legend-inline">
+              <span><i class="swatch swatch-slate"></i>전체 주문</span>
+              <span><i class="swatch swatch-blue"></i>완료 주문</span>
+              <span><i class="swatch swatch-teal"></i>완료율</span>
+            </div>
+          </div>
+          <div class="chart-frame">
+            <div id="monthly-chart" class="svg-chart" role="img" aria-label="월별 주문과 완료율 차트"></div>
+          </div>
+          <div class="mini-metrics" id="monthly-metrics"></div>
+        </section>
+
+        <aside class="panel span-4">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Executive Notes</p>
+              <h2>핵심 인사이트</h2>
+            </div>
+          </div>
+          <div class="insight-list" id="insight-list"></div>
+        </aside>
+
+        <section class="panel span-4">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Category Mix</p>
+              <h2>카테고리별 완료율</h2>
+            </div>
+          </div>
+          <div id="category-chart" class="metric-list"></div>
+        </section>
+
+        <section class="panel span-4">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Entry Funnel</p>
+              <h2>진입 페이지 전환율</h2>
+            </div>
+          </div>
+          <div id="entry-chart" class="metric-list"></div>
+        </section>
+
+        <section class="panel span-4">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Device Lens</p>
+              <h2>디바이스별 구매 전환</h2>
+            </div>
+          </div>
+          <div id="device-chart" class="device-grid"></div>
+        </section>
+
+        <section class="panel span-7">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Retention Risk</p>
+              <h2>연령대별 이탈률</h2>
+            </div>
+          </div>
+          <div id="age-chart" class="metric-list metric-list-wide"></div>
+        </section>
+
+        <section class="panel span-5">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Lifecycle Split</p>
+              <h2>고객 세그먼트 분포</h2>
+            </div>
+          </div>
+          <div class="segment-stack" id="segment-stack"></div>
+          <div class="segment-legend" id="segment-legend"></div>
+        </section>
+
+        <section class="panel span-12">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">Exit Snapshot</p>
+              <h2>이탈 페이지 분석</h2>
+            </div>
+            <p class="panel-note">완료 페이지를 제외한 이탈 구간을 우선 노출합니다.</p>
+          </div>
+          <div class="table-shell">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>이탈 페이지</th>
+                  <th>세션 수</th>
+                  <th>평균 체류시간</th>
+                  <th>구매 완료</th>
+                  <th>전환 신호</th>
+                </tr>
+              </thead>
+              <tbody id="exit-table-body"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <span>인코딩: UTF-8</span>
+        <span>폰트 스택: SUIT / Noto Sans KR / Malgun Gothic</span>
+        <span>실행 방식: 저장소 루트의 `index.html` 또는 GitHub Pages</span>
+      </footer>
+    </div>
+
+    <script src="./script.js" charset="UTF-8"></script>
+  </body>
+</html>
