@@ -1,7 +1,5 @@
 # ShopEasy
 
-Looker 없이도 바로 공유할 수 있도록 만든 정적 대시보드 저장소입니다.
-
 ## Website
 
 - Public site: [https://dffxonnb-cyber.github.io/ShopEasy/](https://dffxonnb-cyber.github.io/ShopEasy/)
