@@ -9,7 +9,7 @@
       value: 89439000,
       format: "currency",
       pill: "누적 실적",
-      note: "완료 주문 기준 누적 매출",
+      note: "완료 주문 기준 3개월 누적 매출",
       trend: "7월 대비 9월 매출 -47.9%",
       series: [60978000, 47411000, 31776000],
       color: "#356dff",
@@ -31,7 +31,7 @@
       format: "number",
       suffix: "회",
       pill: "유입 규모",
-      note: "구매 완료 세션 174회",
+      note: "구매 완료 세션 174회, 전환율 8.7%",
       trend: "세션 구매 전환 8.7%",
       series: [511, 715, 455],
       color: "#f2a93b",
@@ -42,7 +42,7 @@
       format: "number",
       suffix: "명",
       pill: "고객 상태",
-      note: "전체 사용자 500명 중 18.4%",
+      note: "최근 로그인·구매 흐름 기준 활성 고객",
       trend: "이탈위험 고객 200명",
       series: [200, 134, 92, 53, 21],
       color: "#e16357",
@@ -120,7 +120,7 @@
       avgSessionDuration: 214.15,
       completedPurchases: 24,
       conversionRate: 16.78,
-      badge: "Best Efficiency",
+      badge: "전환 효율 상위",
     },
     {
       device: "데스크톱",
@@ -128,7 +128,7 @@
       avgSessionDuration: 200.75,
       completedPurchases: 64,
       conversionRate: 12.6,
-      badge: "Balanced Traffic",
+      badge: "균형형 유입",
     },
     {
       device: "모바일",
@@ -136,7 +136,7 @@
       avgSessionDuration: 153.88,
       completedPurchases: 86,
       conversionRate: 6.38,
-      badge: "Highest Volume",
+      badge: "최대 유입",
     },
   ],
   entryConversion: [
@@ -262,11 +262,11 @@
     {
       tag: "디바이스 기회",
       title: "태블릿 전환율 16.78%로 효율이 가장 좋습니다.",
-      body: "세션 규모는 작지만 성과가 좋아 태블릿 기준 상품상세 레이아웃을 기준안으로 삼아볼 만합니다.",
+      body: "세션 규모는 작지만 전환 효율이 높아, 상품상세·결제 레이아웃 참고군으로 활용할 수 있습니다.",
     },
   ],
   monthlyInsight:
-    "7월 대비 9월 주문 수가 감소했고, 완료 주문 수도 함께 줄어 전체 수요보다 구매 완료 흐름의 약화 가능성을 함께 점검할 필요가 있습니다.",
+    "7월 대비 9월 전체 주문과 완료 주문이 모두 감소했습니다. 단순 주문량 감소뿐 아니라, 완료율 하락과 구매 완료 단계의 이탈 요인을 함께 점검해야 합니다.",
 };
 
 const numberFormatter = new Intl.NumberFormat("ko-KR");

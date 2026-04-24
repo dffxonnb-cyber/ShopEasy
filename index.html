@@ -97,6 +97,9 @@
             </div>
           </div>
           <div id="category-chart" class="metric-list"></div>
+          <p class="section-note">
+            전자기기 카테고리는 고가 상품 특성상 가격 부담, 혜택 인지, 배송·반품 조건 확인 과정에서 이탈이 발생할 가능성이 있어 우선 실험 대상으로 적합합니다.
+          </p>
         </section>
 
         <section class="panel span-4">
@@ -107,6 +110,9 @@
             </div>
           </div>
           <div id="entry-chart" class="metric-list"></div>
+          <p class="section-note">
+            상품상세 진입은 구매 의도가 가장 높은 흐름이고, 홈·검색 진입은 세션 수는 많지만 구매 전환율이 낮아 탐색에서 구매까지 이어지는 흐름 개선이 필요합니다.
+          </p>
         </section>
 
         <section class="panel span-4">
@@ -117,6 +123,12 @@
             </div>
           </div>
           <div id="device-chart" class="device-grid"></div>
+          <p class="section-note">
+            태블릿은 세션 규모는 작지만 전환 효율이 높아, 상품상세·결제 레이아웃 참고군으로 활용할 수 있습니다.
+          </p>
+          <p class="section-note">
+            모바일은 세션 규모가 가장 크지만 전환율이 낮아 구매 과정의 마찰을 우선 점검할 필요가 있습니다.
+          </p>
         </section>
 
         <section class="panel span-7">
@@ -138,6 +150,9 @@
           </div>
           <div class="segment-stack" id="segment-stack"></div>
           <div class="segment-legend" id="segment-legend"></div>
+          <p class="section-note">
+            고객 상태는 구매 횟수와 최근 로그인 흐름을 기준으로 분류한 분석용 세그먼트입니다.
+          </p>
         </section>
 
         <section class="panel span-12">
@@ -146,7 +161,7 @@
               <p class="panel-label">Exit Snapshot</p>
               <h2>이탈 페이지 분석</h2>
             </div>
-            <p class="panel-note">완료 페이지를 제외한 이탈 구간을 우선 노출합니다.</p>
+            <p class="panel-note">완료 페이지는 전환 기준점으로 함께 표시하고, 검색·홈·장바구니·결제 구간의 이탈 신호를 비교합니다.</p>
           </div>
           <div class="table-shell">
             <table class="data-table">
@@ -163,12 +178,40 @@
             </table>
           </div>
         </section>
+
+        <section class="panel span-12 experiment-panel">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">NEXT EXPERIMENT</p>
+              <h2>모바일·전자기기 구매 완료율 개선 테스트</h2>
+            </div>
+          </div>
+          <div class="experiment-grid">
+            <article class="experiment-card experiment-card-wide">
+              <span class="experiment-label">가설</span>
+              <p>
+                모바일 전자기기 상품상세/장바구니 화면에서 혜택·배송·반품 정보를 명확히 노출하면 구매 완료율이 개선될 것이다.
+              </p>
+            </article>
+            <article class="experiment-card">
+              <span class="experiment-label">A안</span>
+              <p>기존 상품상세 및 장바구니 화면</p>
+            </article>
+            <article class="experiment-card">
+              <span class="experiment-label">B안</span>
+              <p>혜택 요약, 배송·반품 안내, 고정 구매 버튼을 강화한 화면</p>
+            </article>
+            <article class="experiment-card">
+              <span class="experiment-label">KPI</span>
+              <p>구매 완료율, 장바구니 이탈률, 결제 시작률</p>
+            </article>
+          </div>
+        </section>
       </main>
 
       <footer class="page-footer">
-        <span>분석 범위: 2025.07 - 2025.09</span>
-        <span>핵심 관점: 주문 감소 · 전환 흐름 · 이탈 위험</span>
-        <span>ShopEasy 서비스 지표 분석 화면</span>
+        <span>ShopEasy 서비스 지표 분석 프로젝트 · 2025 Q3</span>
+        <span>주문 감소 · 전환 흐름 · 이탈 위험 분석</span>
       </footer>
     </div>
 

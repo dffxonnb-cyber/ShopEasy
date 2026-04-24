@@ -630,6 +630,13 @@ img {
   height: 14px;
 }
 
+.section-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
 .segment-stack {
   display: flex;
   gap: 8px;
@@ -738,6 +745,44 @@ img {
   gap: 10px 18px;
   color: var(--muted);
   font-size: 0.9rem;
+  border-top: 1px solid rgba(224, 231, 244, 0.88);
+  padding-top: 18px;
+}
+
+.experiment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.experiment-card {
+  padding: 18px 18px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(220, 229, 244, 0.92);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(244, 247, 255, 0.94));
+}
+
+.experiment-card-wide {
+  grid-column: span 3;
+}
+
+.experiment-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(220, 231, 255, 0.92);
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.experiment-card p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--text);
 }
 
 svg text {
@@ -747,6 +792,14 @@ svg text {
 @media (max-width: 1180px) {
   .filter-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .experiment-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .experiment-card-wide {
+    grid-column: span 2;
   }
 
   .span-8,
@@ -777,6 +830,14 @@ svg text {
 
   .filter-strip {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .experiment-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .experiment-card-wide {
+    grid-column: span 1;
   }
 
   .brand-block {
@@ -815,5 +876,34 @@ svg text {
   .data-table th,
   .data-table td {
     padding-inline: 8px;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .panel,
+  .status-card,
+  .filter-card,
+  .kpi-card,
+  .insight-card,
+  .mini-metric,
+  .experiment-card,
+  .device-card,
+  .metric-row,
+  .segment-item,
+  .monthly-insight {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none;
+  }
+
+  .panel-header,
+  .chart-frame,
+  .table-shell {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 }
