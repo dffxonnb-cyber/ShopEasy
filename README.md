@@ -100,6 +100,16 @@ ShopEasy는 2025년 7월부터 9월까지 전체 주문 수와 완료 주문 수
 
 `main` 브랜치에 push하면 GitHub Actions가 `looker-dashboard` 산출물을 Pages artifact로 구성하고 GitHub Pages에 배포합니다.
 
+## Reproducibility Check
+
+정적 대시보드 프로젝트이므로 핵심 검증은 배포 대상 HTML, CSS, JavaScript, CSV 산출물이 모두 존재하고 내부 링크가 깨지지 않는지 확인하는 것입니다.
+
+```bash
+python scripts/check_public_artifacts.py
+```
+
+GitHub Actions는 Pages artifact를 만들기 전에 같은 검증을 실행합니다.
+
 ## GitHub About
 
 이 저장소의 GitHub About 영역은 아래 값으로 맞춥니다.
