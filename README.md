@@ -110,6 +110,8 @@ python scripts/check_public_artifacts.py
 
 GitHub Actions는 Pages artifact를 만들기 전에 같은 검증을 실행합니다.
 
+검증 범위, 데이터 경계, 알려진 한계는 [VERIFY.md](./VERIFY.md)에 정리했습니다.
+
 ## GitHub About
 
 이 저장소의 GitHub About 영역은 아래 값으로 맞춥니다.
