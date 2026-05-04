@@ -61,6 +61,13 @@ ShopEasy는 2025년 7월부터 9월까지 전체 주문 수와 완료 주문 수
 
 분석 실습을 위해 생성한 더미 데이터를 사용했습니다. 단순 랜덤 데이터가 아니라 이커머스 지표 분석 흐름을 연습할 수 있도록 주문 감소, 카테고리별 완료율 차이, 디바이스별 전환율 차이, 고객 이탈 신호가 드러나도록 설계했습니다.
 
+데이터는 `scripts/generate_dataset.py`에서 seed 고정 방식으로 다시 생성할 수 있습니다. 기본 seed는 `20250930`이며, 공개 검증 스크립트는 원천 CSV와 집계 CSV의 schema, row count, 핵심 지표 일관성을 함께 확인합니다.
+
+```bash
+python scripts/generate_dataset.py
+python scripts/check_public_artifacts.py
+```
+
 | File | Description |
 | --- | --- |
 | `dataset/shopeasy_orders.csv` | 주문, 카테고리, 금액, 주문 상태, 주문일 |
@@ -103,6 +110,7 @@ ShopEasy는 2025년 7월부터 9월까지 전체 주문 수와 완료 주문 수
 ## Reproducibility Check
 
 정적 대시보드 프로젝트이므로 핵심 검증은 배포 대상 HTML, CSS, JavaScript, CSV 산출물이 모두 존재하고 내부 링크가 깨지지 않는지 확인하는 것입니다.
+추가로 CSV schema, row count, 전체 주문/완료 주문 합계, 모바일 전환 저하 신호, 전자기기 완료율 저하 신호를 확인합니다.
 
 ```bash
 python scripts/check_public_artifacts.py

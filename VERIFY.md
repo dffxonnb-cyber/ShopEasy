@@ -8,13 +8,14 @@ ShopEasy is a static dashboard project. Its reproducibility target is whether th
 | --- | --- | --- |
 | Static dashboard files | Yes | `looker-dashboard/index.html`, CSS, JavaScript, and 404 page are tracked. |
 | CSV review artifacts | Yes | Synthetic order, user, session, and metric CSVs are tracked under `dataset/`. |
+| Dataset generation | Yes | `scripts/generate_dataset.py` rebuilds the synthetic dataset with seed `20250930`. |
 | Asset references | Yes | The checker confirms the dashboard HTML references CSS and JavaScript. |
 | GitHub Pages package | Yes | CI verifies artifacts before packaging `looker-dashboard` as the Pages site. |
-| Dataset generation | No | The repo verifies the published synthetic dataset, not its generator. |
 
 ## Local Verification
 
 ```bash
+python scripts/generate_dataset.py --output-dir dataset
 python scripts/check_public_artifacts.py
 ```
 
@@ -22,7 +23,8 @@ The script checks:
 
 - required HTML/CSS/JavaScript files
 - required CSV files
-- CSV header and data row presence
+- CSV schema and row counts
+- monthly order totals and key friction signals
 - dashboard references to `styles.css` and `script.js`
 
 ## CI Verification
@@ -36,11 +38,10 @@ python scripts/check_public_artifacts.py
 ## Data Boundary
 
 - The tracked dataset is synthetic educational sample data.
-- Public verification checks completeness and deployability of the current artifact set.
+- Public verification checks completeness, deployability, schema, and key metric consistency.
 - No external data source is required to review the dashboard.
 
 ## Known Limits
 
-- The current repo does not include a separate data-generation script.
 - CI does not run browser-based visual regression tests.
-- Future improvement: add a deterministic synthetic data generator and compare regenerated CSV outputs.
+- The generator intentionally optimizes for realistic dashboard signals, not production-grade behavioral simulation.
