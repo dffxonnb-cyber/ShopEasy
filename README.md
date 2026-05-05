@@ -1,5 +1,9 @@
 # ShopEasy 통합 웹 대시보드
 
+[![Deploy Pages](https://github.com/dffxonnb-cyber/ShopEasy/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/dffxonnb-cyber/ShopEasy/actions/workflows/deploy-pages.yml)
+[![Live](https://img.shields.io/badge/live-GitHub%20Pages-0f766e)](https://dffxonnb-cyber.github.io/ShopEasy/)
+[![Dataset](https://img.shields.io/badge/dataset-deterministic%20synthetic-2563eb)](./scripts/generate_dataset.py)
+
 ShopEasy는 2025년 3분기 이커머스 주문, 전환, 이탈 흐름을 한 화면에서 점검할 수 있도록 만든 서비스 지표 분석 대시보드입니다. 주문 감소를 단순 유입 감소로만 보지 않고, 카테고리, 진입 페이지, 디바이스, 연령대, 이탈 페이지 관점으로 나누어 구매 완료 흐름의 병목을 정리했습니다.
 
 - Live Dashboard: [dffxonnb-cyber.github.io/ShopEasy](https://dffxonnb-cyber.github.io/ShopEasy/)
