@@ -390,9 +390,12 @@ function renderMonthlyChart() {
   }
 
   const data = dashboardData.monthlyOrders;
-  const width = Math.max(container.clientWidth, 360);
-  const height = width < 520 ? 320 : 360;
-  const margin = { top: 34, right: 24, bottom: 52, left: 56 };
+  const width = Math.max(container.clientWidth, 280);
+  const isCompact = width < 520;
+  const height = isCompact ? 280 : 360;
+  const margin = isCompact
+    ? { top: 30, right: 12, bottom: 44, left: 40 }
+    : { top: 34, right: 24, bottom: 52, left: 56 };
   const chartWidth = width - margin.left - margin.right;
   const chartHeight = height - margin.top - margin.bottom;
   const maxOrders = Math.max(...data.flatMap((item) => [item.totalOrders, item.completedOrders]));
@@ -738,11 +741,11 @@ function renderExitTable() {
       const signal = exitSignal(item.exitPage);
       return `
         <tr>
-          <td><strong>${item.exitPage}</strong></td>
-          <td>${formatNumber(item.totalSessions)}회</td>
-          <td>${formatDuration(item.avgSessionDuration)}</td>
-          <td>${formatNumber(item.completedPurchases)}건</td>
-          <td><span class="signal-pill ${signal.className}">${signal.label}</span></td>
+          <td data-label="이탈 페이지"><strong>${item.exitPage}</strong></td>
+          <td data-label="세션 수">${formatNumber(item.totalSessions)}회</td>
+          <td data-label="평균 체류시간">${formatDuration(item.avgSessionDuration)}</td>
+          <td data-label="구매 완료">${formatNumber(item.completedPurchases)}건</td>
+          <td data-label="전환 신호"><span class="signal-pill ${signal.className}">${signal.label}</span></td>
         </tr>
       `;
     })
