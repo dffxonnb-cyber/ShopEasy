@@ -6,11 +6,33 @@
 
 ShopEasy는 2025년 3분기 이커머스 주문, 전환, 이탈 흐름을 한 화면에서 점검할 수 있도록 만든 서비스 지표 분석 대시보드입니다. 주문 감소를 단순 유입 감소로만 보지 않고, 카테고리, 진입 페이지, 디바이스, 연령대, 이탈 페이지 관점으로 나누어 구매 완료 흐름의 병목을 정리했습니다.
 
+이 프로젝트는 실제 운영 데이터 기반 성과 분석이 아니라, **deterministic synthetic dataset으로 서비스 지표 구조와 대시보드 검토 흐름을 설계한 보조 포트폴리오 evidence**입니다.
+
 - Live Dashboard: [dffxonnb-cyber.github.io/ShopEasy](https://dffxonnb-cyber.github.io/ShopEasy/)
 - Repository Description: 2025년 3분기 이커머스 주문·전환·이탈 흐름을 분석한 ShopEasy 웹 대시보드.
 - Project Type: E-commerce analytics / conversion analysis / web dashboard
-- Data Type: 주문 데이터, 사용자 데이터, 세션 데이터
+- Data Type: synthetic 주문 데이터, 사용자 데이터, 세션 데이터
 - Role: 데이터 설계, 지표 산출, 인사이트 정리, 웹 대시보드 구현, A/B 테스트 설계
+
+## 3-Minute Reviewer Path
+
+| Step | Open | What to check |
+| --- | --- | --- |
+| 1 | [Live Dashboard](https://dffxonnb-cyber.github.io/ShopEasy/) | 정적 웹 대시보드와 핵심 지표 화면 |
+| 2 | [Dataset Generator](./scripts/generate_dataset.py) | seed 고정 synthetic dataset 생성 방식 |
+| 3 | [Public Artifact Check](./scripts/check_public_artifacts.py) | CSV schema, row count, 핵심 지표 일관성 검증 |
+| 4 | [VERIFY.md](./VERIFY.md) | 공개 검증 범위와 데이터 경계 |
+| 5 | [GitHub Pages workflow](./.github/workflows/deploy-pages.yml) | Pages artifact 생성과 배포 흐름 |
+
+## Evidence Boundary
+
+| Question | Evidence |
+| --- | --- |
+| **What did I build?** | HTML/CSS/JavaScript 기반 정적 대시보드와 Python/pandas 기반 지표 산출 CSV |
+| **What is synthetic?** | 주문·사용자·세션 데이터는 분석 실습용 deterministic synthetic dataset |
+| **What is verified?** | dataset 생성, CSV schema, row count, 핵심 지표, Pages artifact 구성 |
+| **What is the main action?** | 모바일 전자기기 상품상세/장바구니 화면 개선 A/B 테스트 제안 |
+| **What is not claimed?** | 실제 운영 매출, 실제 고객 행동, 실제 실험 성과는 주장하지 않음 |
 
 ## Business Problem
 
@@ -63,7 +85,7 @@ ShopEasy는 2025년 7월부터 9월까지 전체 주문 수와 완료 주문 수
 
 ## Data
 
-분석 실습을 위해 생성한 더미 데이터를 사용했습니다. 단순 랜덤 데이터가 아니라 이커머스 지표 분석 흐름을 연습할 수 있도록 주문 감소, 카테고리별 완료율 차이, 디바이스별 전환율 차이, 고객 이탈 신호가 드러나도록 설계했습니다.
+분석 실습을 위해 생성한 synthetic 데이터를 사용했습니다. 단순 랜덤 데이터가 아니라 이커머스 지표 분석 흐름을 연습할 수 있도록 주문 감소, 카테고리별 완료율 차이, 디바이스별 전환율 차이, 고객 이탈 신호가 드러나도록 설계했습니다.
 
 데이터는 `scripts/generate_dataset.py`에서 seed 고정 방식으로 다시 생성할 수 있습니다. 기본 seed는 `20250930`이며, 공개 검증 스크립트는 원천 CSV와 집계 CSV의 schema, row count, 핵심 지표 일관성을 함께 확인합니다.
 
@@ -113,8 +135,7 @@ python scripts/check_public_artifacts.py
 
 ## Reproducibility Check
 
-정적 대시보드 프로젝트이므로 핵심 검증은 배포 대상 HTML, CSS, JavaScript, CSV 산출물이 모두 존재하고 내부 링크가 깨지지 않는지 확인하는 것입니다.
-추가로 CSV schema, row count, 전체 주문/완료 주문 합계, 모바일 전환 저하 신호, 전자기기 완료율 저하 신호를 확인합니다.
+정적 대시보드 프로젝트이므로 핵심 검증은 배포 대상 HTML, CSS, JavaScript, CSV 산출물이 모두 존재하고 내부 링크가 깨지지 않는지 확인하는 것입니다. 추가로 CSV schema, row count, 전체 주문/완료 주문 합계, 모바일 전환 저하 신호, 전자기기 완료율 저하 신호를 확인합니다.
 
 ```bash
 python scripts/check_public_artifacts.py
